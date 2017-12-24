@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+    <title>Events</title>
+    <link href="css/events/style.css" rel="stylesheet" type="text/css" />
+    <style media="screen">
+    @import url(https://fonts.googleapis.com/css?family=Rancho);
+
+@import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
+
+.photo_container.fade{
+background: #334006;
+border-radius: 6px;
+height: 500px;
+margin: 0 auto;
+overflow: hidden;
+position: relative;
+width: 500px;
+}
+
+.photo_container.fade *{
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.photo_container.fade img {
+height: 520px;
+margin: -10px 0 0 -10px;
+width: 520px;
+}
+
+.photo_container.fade.hover .photo img,
+.photo_container.fade:hover .photo img{
+height: 500px;
+margin: 0 ;
+opacity: 0.5;
+width: 500px;
+}
+
+.photo_container.fade .label {
+color: #fff;
+font-family: 'Rancho', serif;
+font-size: 28px;
+left: 20px;
+letter-spacing: 6px;
+opacity: 1;
+position: absolute;
+top: 14px;
+z-index: 999;
+}
+
+
+.photo_container.fade .description {
+color: #fff;
+left: 0;
+opacity: 0;
+position: absolute;
+-moz-transform: scale(0.95);
+-ms-transform: scale(0.95);
+-webkit-transform: scale(0.95);
+text-align: left;
+top: 100px;
+transform: scale(0.95);
+width: 500px;
+}
+
+.photo_container.fade.hover .description,
+.photo_container.fade:hover .description {
+opacity: 1;
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+.photo_container.fade .description .photo_title{
+border-bottom : 4px solid #fff;
+font-family: 'Sue Ellen Francisco', serif;
+font-size: 48px;
+margin: 0 20px 10px 20px;
+padding-bottom: 10px;
+}
+
+.photo_container.fade .description p{
+font-family: 'Sue Ellen Francisco', serif;
+font-size: 24px;
+margin: 0;
+padding: 20px;
+}
+    </style>
+    <script type="text/javascript">
+      // (function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()
+    </script>
+</head>
+<body class="">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47064352-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
+<h1>Ivan Daum - Full-stack developper</h1>
+<nav class="navigation">
+  <a href="#" class="back-button">
+    <p></p>
+    <p>Back to Events.</p>
+  </a>
+</nav>
+<div class="loading-bar"><div class="percent"></div></div>
+<div class="loader">
+  <p class="title loading"><span class=''>C</span><span class=''>o</span><span class=''>n</span><span class=''>t</span><span class=''>e</span><span class=''>n</span><span class=''>t</span><span class=''> </span><span class=''>i</span><span class=''>s</span><span class=''> </span><span class=''>l</span><span class=''>o</span><span class=''>a</span><span class=''>d</span><span class=''>i</span><span class=''>n</span><span class=''>g</span><span class=''>.</span></p>
+  <p class="title loaded"><span class=''>A</span><span class=''>l</span><span class=''>l</span><span class=''> </span><span class=''>g</span><span class=''>o</span><span class=''>o</span><span class=''>d</span><span class=''>.</span></p>
+</div>
+<div class="home">
+  <section class="titles">
+    <p class="title initial">
+      <span class='hidden-phone'>S</span><span class='hidden-phone'>c</span><span class='hidden-phone'>r</span><span class='hidden-phone'>o</span><span class='hidden-phone'>l</span><span class='hidden-phone'>l</span><span class='hidden-phone'>.</span>      <span class='visible-phone'>D</span><span class='visible-phone'>r</span><span class='visible-phone'>a</span><span class='visible-phone'>g</span><span class='visible-phone'>.</span>    </p>
+  </section>
+
+  <section class="projects">
+    <div class="projects-content">
+
+        <a id="project-reset" href="#project/reset" class="project c-projects" data-id="169">
+            <h2 class="project-title unselectable project-169">Dance<p class="excerpt">Dance</p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="images/events/dance.jpg" style="background-image:url(images/events/dance.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-julie-ferrieux" href="#project/julie-ferrieux" class="project c-projects" data-id="166">
+            <h2 class="project-title unselectable project-166">Dramatics<p class="excerpt">Dramatics.</p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="http://ivandaum.fr/wp-content/uploads/2017/08/colibri_0-1-1024x576.png" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/colibri_0-1-1024x576.png)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-florian-moreau" href="#project/florian-moreau" class="project c-projects" data-id="163">
+            <h2 class="project-title unselectable project-163">Life 'N' Style<p class="excerpt">Life 'N' Style</p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-15-à-21.03.07-1024x640.png" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-15-à-21.03.07-1024x640.png)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-data-viz" href="#project/data-viz" class="project c-projects" data-id="160">
+            <h2 class="project-title unselectable project-160">Art 'N' Craft<p class="excerpt">Art 'N' Craft</p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-28-à-12.46.18-1024x1003.png" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-28-à-12.46.18-1024x1003.png)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-joffrey-petit" href="#project/joffrey-petit" class="project c-projects" data-id="157">
+            <h2 class="project-title unselectable project-157">Music<p class="excerpt">Music.</p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="http://ivandaum.fr/wp-content/uploads/2017/08/1433319541-683x1024.jpg" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/1433319541-683x1024.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-motostory" href="#project/motostory" class="project c-projects" data-id="154">
+            <h2 class="project-title unselectable project-154">Gaming<p class="excerpt">Gaming.</p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="http://ivandaum.fr/wp-content/uploads/2017/08/background_home-1024x688.jpg" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/background_home-1024x688.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-numerama" href="#project/numerama" class="project c-projects" data-id="151">
+            <h2 class="project-title unselectable project-151">Nukkad<p class="excerpt">Nukkad</p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="http://ivandaum.fr/wp-content/uploads/2017/08/1-wGDT5NlZNf2bk156VZe8Lg-684x1024.jpeg" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/1-wGDT5NlZNf2bk156VZe8Lg-684x1024.jpeg)"></div>
+            </div>
+
+        </a>
+
+        <a id="project-joffrey-petit" href="#project/joffrey-petit" class="project c-projects" data-id="157">
+            <h2 class="project-title unselectable project-157">Litrary Events<p class="excerpt">Litrary Events.</p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="http://ivandaum.fr/wp-content/uploads/2017/08/1433319541-683x1024.jpg" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/1433319541-683x1024.jpg)"></div>
+            </div>
+
+        </a>
+
+          </div>
+  </section>
+
+  <section class="projects-details">
+            <div class="project-detail" id="reset">
+          <div class="intro">
+              <div class="cover" style="background-image:url("></div>
+              <div class="project-name">
+                <h3>Dance</h3>
+                <div class="excerpt">
+                    <p>Dance.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <div>
+                                  <a target="blank" href="">Register</a>
+                              </div>
+            </div>
+            <div style="width: 1918px;" class="wp-video"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-169-1" width="1918" height="1064" loop="1" autoplay="1" preload="metadata" controls="controls"><source type="video/mp4" src="http://ivandaum.fr/wp-content/uploads/2017/08/8-RESET-Parcours.mp4?_=1" /><a href="http://ivandaum.fr/wp-content/uploads/2017/08/8-RESET-Parcours.mp4">http://ivandaum.fr/wp-content/uploads/2017/08/8-RESET-Parcours.mp4</a></video></div>
+
+<img class="alignnone size-large wp-image-244" src="http://ivandaum.fr/wp-content/uploads/2017/08/Reset_maquettes2-27-1024x576.jpg" alt="" width="1024" height="576" /> <img class="alignnone size-large wp-image-245" src="http://ivandaum.fr/wp-content/uploads/2017/08/Reset_maquettes2-9-1024x576.jpg" alt="" width="1024" height="576" /> <img class="alignnone size-large wp-image-246" src="http://ivandaum.fr/wp-content/uploads/2017/08/Reset_maquettes2-18-1024x576.jpg" alt="" width="1024" height="576" /> <img class="alignnone size-large wp-image-247" src="http://ivandaum.fr/wp-content/uploads/2017/08/Reset_maquettes2-28-1024x576.jpg" alt="" width="1024" height="576" /> <img class="alignnone size-large wp-image-248" src="http://ivandaum.fr/wp-content/uploads/2017/08/Reset_maquettes2-42-1024x576.jpg" alt="" width="1024" height="576" />          </div>
+                      <a class="next-post" href="#project/julie-ferrieux">
+              <p>Next Event</p>
+            </a>
+
+        </div>
+
+
+            <div class="project-detail" id="julie-ferrieux">
+          <div class="intro">
+              <div class="cover" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/colibri_0-1-1024x576.png)"></div>
+              <div class="project-name">
+                <h3>Julie Ferrieux</h3>
+                <div class="excerpt">
+                    <p>Interactive designer at Gobelins school.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <div>
+                <h4>Technology</h4>
+                <div class="tags">
+                                            <p>Wordpress</p>
+                                    </div>
+              </div>
+              <div>
+                <h4>Date</h4>
+                <p>2017</p>
+              </div>
+              <div>
+                                  <a target="blank" href="http://julieferrieux.com">Visit website</a>
+                              </div>
+            </div>
+            <img class="alignnone wp-image-176 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/julie1-1024x725.png" alt="" width="1024" height="725" /> <img class="alignnone wp-image-177 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/julie2-1024x724.png" alt="" width="1024" height="724" /> <img class="alignnone wp-image-178 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/julie3-1024x710.png" alt="" width="1024" height="710" /> <img class="alignnone wp-image-179 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/julie4-1024x714.png" alt="" width="1024" height="714" /> <img class="alignnone wp-image-180 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/julie5-1024x716.png" alt="" width="1024" height="716" />          </div>
+
+                      <a class="next-post" href="#project/florian-moreau">
+              <p>Next project</p>
+              <b>Florian Moreau</b>
+            </a>
+
+        </div>
+
+
+            <div class="project-detail" id="florian-moreau">
+          <div class="intro">
+              <div class="cover" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-15-à-21.03.07-1024x640.png)"></div>
+              <div class="project-name">
+                <h3>Florian Moreau</h3>
+                <div class="excerpt">
+                    <p>Motion designer at Gobelins School</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <div>
+                <h4>Technology</h4>
+                <div class="tags">
+                                            <p>Wordpress</p>
+                                    </div>
+              </div>
+              <div>
+                <h4>Date</h4>
+                <p>2017</p>
+              </div>
+              <div>
+                                  <a target="blank" href="http://florianmoreau.fr">Visit website</a>
+                              </div>
+            </div>
+            <img class="alignnone size-large wp-image-233" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-29-à-10.29.08-1024x738.png" alt="" width="1024" height="738" /> <img class="alignnone size-large wp-image-234" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-29-à-10.29.18-1024x733.png" alt="" width="1024" height="733" /> <img class="alignnone size-large wp-image-235" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-29-à-10.29.28-1024x725.png" alt="" width="1024" height="725" /> <img class="alignnone size-large wp-image-236" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-29-à-10.29.57-1024x733.png" alt="" width="1024" height="733" /> <img class="alignnone size-large wp-image-237" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-29-à-10.30.25-1024x990.png" alt="" width="1024" height="990" /> <img class="alignnone size-large wp-image-238" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-29-à-10.30.47-1024x641.png" alt="" width="1024" height="641" /> <img class="alignnone size-large wp-image-239" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-29-à-10.31.16-587x1024.png" alt="" width="587" height="1024" /> <img class="alignnone size-large wp-image-240" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-29-à-10.31.30-599x1024.png" alt="" width="599" height="1024" />          </div>
+
+                      <a class="next-post" href="#project/data-viz">
+              <p>Next project</p>
+              <b>Data viz</b>
+            </a>
+
+        </div>
+
+
+            <div class="project-detail" id="data-viz">
+          <div class="intro">
+              <div class="cover" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-28-à-12.46.18-1024x1003.png)"></div>
+              <div class="project-name">
+                <h3>Data viz</h3>
+                <div class="excerpt">
+                    <p>Data visualisation of 30 students</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <div>
+                <h4>Technology</h4>
+                <div class="tags">
+                                            <p>Canvas</p>
+                                    </div>
+              </div>
+              <div>
+                <h4>Date</h4>
+                <p>2016</p>
+              </div>
+              <div>
+                                  <a target="blank" href="http://lab.ivandaum.fr/dataviz/">Visit website</a>
+                              </div>
+            </div>
+            <div style="width: 1564px;" class="wp-video"><video class="wp-video-shortcode" id="video-160-2" width="1564" height="1080" loop="1" autoplay="1" preload="none" controls="controls"><source type="video/mp4" src="http://ivandaum.fr/wp-content/uploads/2017/08/dataviz.mp4?_=2" /><a href="http://ivandaum.fr/wp-content/uploads/2017/08/dataviz.mp4">http://ivandaum.fr/wp-content/uploads/2017/08/dataviz.mp4</a></video></div>
+
+<img class="alignnone size-large wp-image-223" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-00.49.07-1024x728.png" alt="" width="1024" height="728" /> <img class="alignnone size-large wp-image-224" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-28-à-12.46.56-977x1024.png" alt="" width="977" height="1024" /> <img class="alignnone size-large wp-image-225" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-28-à-12.47.13-950x1024.png" alt="" width="950" height="1024" /> <img class="alignnone size-large wp-image-226" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-28-à-12.53.07-1024x978.png" alt="" width="1024" height="978" /> <img class="alignnone size-large wp-image-227" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-28-à-12.53.13-973x1024.png" alt="" width="973" height="1024" />          </div>
+
+                      <a class="next-post" href="#project/joffrey-petit">
+              <p>Next project</p>
+              <b>Joffrey Petit</b>
+            </a>
+
+        </div>
+
+
+            <div class="project-detail" id="joffrey-petit">
+          <div class="intro">
+              <div class="cover" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/1433319541-683x1024.jpg)"></div>
+              <div class="project-name">
+                <h3>Joffrey Petit</h3>
+                <div class="excerpt">
+                    <p>Professional makeup artist working in the motion picture business.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <div>
+                <h4>Technology</h4>
+                <div class="tags">
+                                            <p>Masonry,</p>
+                                            <p>Scrollmagic</p>
+                                    </div>
+              </div>
+              <div>
+                <h4>Date</h4>
+                <p>2016</p>
+              </div>
+              <div>
+                                  <a target="blank" href="http://joffreypetit.com">Visit website</a>
+                              </div>
+            </div>
+            <img class="alignnone size-large wp-image-220" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-27-à-17.04.20-1024x757.png" alt="" width="1024" height="757" /> <img class="alignnone size-large wp-image-213" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-27-à-17.04.45-1024x777.png" alt="" width="1024" height="777" /> <img class="alignnone size-large wp-image-214" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-27-à-17.05.14-1024x772.png" alt="" width="1024" height="772" /> <img class="alignnone wp-image-215 size-full" src="http://ivandaum.fr/wp-content/uploads/2017/08/jo_loader.png" alt="" width="802" height="351" />          </div>
+
+                      <a class="next-post" href="#project/motostory">
+              <p>Next project</p>
+              <b>Motostory</b>
+            </a>
+
+        </div>
+
+
+            <div class="project-detail" id="motostory">
+          <div class="intro">
+              <div class="cover" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/background_home-1024x688.jpg)"></div>
+              <div class="project-name">
+                <h3>Motostory</h3>
+                <div class="excerpt">
+                    <p>Web experience telling the story of Motorola and Lenovo through mobile technology.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <div>
+                <h4>Technology</h4>
+                <div class="tags">
+                                            <p>Scrollmagic</p>
+                                    </div>
+              </div>
+              <div>
+                <h4>Date</h4>
+                <p>2016</p>
+              </div>
+              <div>
+                                  <a target="blank" href="http://www.frandroid.com/motostory/">Visit website</a>
+                              </div>
+            </div>
+            <div style="width: 1920px;" class="wp-video"><video class="wp-video-shortcode" id="video-154-3" width="1920" height="1080" loop="1" autoplay="1" preload="none" controls="controls"><source type="video/mp4" src="http://ivandaum.fr/wp-content/uploads/2017/08/motostory.mp4?_=3" /><a href="http://ivandaum.fr/wp-content/uploads/2017/08/motostory.mp4">http://ivandaum.fr/wp-content/uploads/2017/08/motostory.mp4</a></video></div>
+
+<img class="alignnone wp-image-191 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-18.45.55-1024x630.png" alt="" width="1024" height="630" /> <img class="alignnone wp-image-192 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-18.46.14-1024x627.png" alt="" width="1024" height="627" /> <img class="alignnone wp-image-193 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-18.48.28-1024x630.png" alt="" width="1024" height="630" /> <img class="alignnone wp-image-194 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-18.48.59-1024x629.png" alt="" width="1024" height="629" />          </div>
+
+                      <a class="next-post" href="#project/numerama">
+              <p>Next project</p>
+              <b>Numerama</b>
+            </a>
+
+        </div>
+
+
+            <div class="project-detail" id="numerama">
+          <div class="intro">
+              <div class="cover" style="background-image:url(http://ivandaum.fr/wp-content/uploads/2017/08/1-wGDT5NlZNf2bk156VZe8Lg-684x1024.jpeg)"></div>
+              <div class="project-name">
+                <h3>Numerama</h3>
+                <div class="excerpt">
+                    <p>Part of the team who worked on Numerama's redesign</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <div>
+                <h4>Technology</h4>
+                <div class="tags">
+                                            <p>Themosis,</p>
+                                            <p>Wordpress</p>
+                                    </div>
+              </div>
+              <div>
+                <h4>Date</h4>
+                <p>2015</p>
+              </div>
+              <div>
+                                  <a target="blank" href="http://numerama.com">Visit website</a>
+                              </div>
+            </div>
+            <img class="alignnone size-large wp-image-201" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-22.44.16-1024x936.png" alt="" width="1024" height="936" /> <img class="alignnone wp-image-202 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-22.44.37-1024x941.png" alt="" width="1024" height="941" /> <img class="alignnone wp-image-203 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-22.44.55-1024x963.png" alt="" width="1024" height="963" /> <img class="alignnone wp-image-204 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-22.45.58-1024x921.png" alt="" width="1024" height="921" /> <img class="alignnone wp-image-205 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-22.47.43-1024x912.png" alt="" width="1024" height="912" /> <img class="alignnone wp-image-206 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/Capture-d’écran-2017-08-26-à-22.49.32-1024x876.png" alt="" width="1024" height="876" /> <img class="alignnone wp-image-207 size-large" src="http://ivandaum.fr/wp-content/uploads/2017/08/avantapres-1024x522.jpg" alt="" width="1024" height="522" />          </div>
+
+
+        </div>
+
+
+      </section>
+</div>
+<div class="page404">
+  <p>Hey buddy, you lost?</p>
+  <a href="#">Go home.</a>
+  <p class="section-title">404</p>
+</div>
+
+<script src="js/events/events.js" type="text/javascript"></script>
+</div>
+</body>
