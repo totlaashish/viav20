@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+
+    <style media="screen">
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body,html{
+      width: 100%;
+      height: 100vh;
+    }
+      .content{
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url("images/form/forest.jpg");
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+      }
+      input{
+        border: 0;
+        outline: 0;
+        border-bottom: 2px solid #696761;
+        color: #9f8f68;
+        text-align: center;
+        word-break: break-word;
+        white-space: pre-wrap;
+        font-size: 20px;
+        background-color: transparent;
+      }
+      .two{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: justify;
+        padding: 20px;
+        color: white;
+      }
+      .two>*{
+        padding: 5px;
+        margin: 5px 0;
+      }
+      .sub{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      .sub>input{
+        font-size: 25px;
+        cursor: pointer;
+      }
+      select{
+        background-color: #9f8f68;
+        border: 0;
+        outline: 0;
+      }
+      header{
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        padding: 40px 0 20px 0;
+        width: 100%;
+      }
+      u{
+        text-decoration-color:#9f8f67
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Contact Form - sent to a Google Sheet -->
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+onload="if(submitted) {window.location='http://vivacity.lnmiit.ac.in';}"></iframe>
+
+
+<div class="content">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
+<header>
+  <u>Vivacity 2018 Registrations</u>
+</header>
+
+<div class="one">
+  <div class="two">
+</br>Hello, my name is
+	<input type="text" autofocus required placeholder="Tony stark" name="entry.1619957618"/>
+  . I am from
+<input type="text" placeholder="LNMIIT" required name="entry.1752921588"/>
+ college. You can reach me on my phone at
+	<input type="text" placeholder="8504xxxxxx" pattern="[0-9]" required name="entry.1060262953"/>
+  or via email at
+	<input type="text" placeholder="your@email.com" required name="entry.1327166253"/>
+
+. The name of our team is
+	<input type="text" placeholder="Team name" required name="entry.150632985"/>
+	and we are a group of
+	<input type="text" placeholder="number of members" required name="entry.18825988"/>
+  members
+	. Interested in participating in
+	<select name="entry.226987026" >
+    	<option value="Event one">Event one</option>
+    	<option value="event two">Event two</option>
+    	<option value="event three">Event three</option>
+    	<option value="Event four">Event four</option>
+    </select>
+
+ . My Paytm Transaction ID is
+    <input type="text" name="entry.1836594660"/>
+	Remarks
+	<input type="text" name="entry.1251489619"/>
+  .
+	<input type="hidden" name="fvv" value="1">
+	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4375361186652912300&quot;]">
+	<input type="hidden" name="pageHistory" value="0">
+	<input type="hidden" name="fbzx" value="-4375361186652912300">
+
+
+<div class="sub">
+	<input type="submit" value = "SUBMIT" target="_blank">
+</div>
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>
