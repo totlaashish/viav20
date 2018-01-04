@@ -42,6 +42,23 @@ img.emoji {
   height: 100vh;
   position: fixed;
   z-index: 1112;
+animation: anim 6s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes anim {
+  0%{width: 100%;}
+  99%{width: 100%;}
+  100%{width: 0;}
+}
+@-webkit-keyframes anim {
+  0%{width: 100%;}
+  99%{width: 100%;}
+  100%{width: 0;}
+}
+@-moz-keyframes anim {
+  0%{width: 100%;}
+  99%{width: 100%;}
+  100%{width: 0;}
 }
 pattern path {
   stroke: #8D946A;
