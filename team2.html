@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Team</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="https://use.typekit.net/mxn0smd.css">
+<script src="js/team/lib.js"></script>
+<script src="js/team/common.min.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<link rel="stylesheet" href="css/team/reset.css">
+<link rel="stylesheet" href="css/team/style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53210060-1', 'auto');
+  ga('send', 'pageview');
+</script><link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/monopo.co.jp\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+.loader{
+  background: #8D946A;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1112;
+}
+pattern path {
+  stroke: #8D946A;
+}
+.snake-group {
+  stroke: #292A18;
+}
+.snake {
+  -webkit-animation: stroke-anim 4s linear infinite;
+          animation: stroke-anim 4s linear infinite;
+}
+@-webkit-keyframes stroke-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes stroke-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* Values generated from JS */
+.snake {
+  stroke-dasharray: 32 224;
+  stroke-dashoffset: 256;
+  -webkit-animation-timing-function: steps(32);
+          animation-timing-function: steps(32);
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+.dot {
+  -webkit-animation: dot1 4s steps(1) infinite;
+          animation: dot1 4s steps(1) infinite;
+}
+@-webkit-keyframes dot1 {
+  0%,
+  26%,
+  91.1% {
+    opacity: 1;
+  }
+  26.1%,
+  91% {
+    opacity: 0;
+  }
+}
+@keyframes dot1 {
+  0%,
+  26%,
+  91.1% {
+    opacity: 1;
+  }
+  26.1%,
+  91% {
+    opacity: 0;
+  }
+}
+.dot-2 {
+  -webkit-animation-name: dot2;
+          animation-name: dot2;
+}
+@-webkit-keyframes dot2 {
+  0%,
+  26%,
+  51%,
+  100% {
+    opacity: 0;
+  }
+  26.1%,
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes dot2 {
+  0%,
+  26%,
+  51%,
+  100% {
+    opacity: 0;
+  }
+  26.1%,
+  50% {
+    opacity: 1;
+  }
+}
+.dot-3 {
+  -webkit-animation-name: dot3;
+          animation-name: dot3;
+}
+@-webkit-keyframes dot3 {
+  0%,
+  50%,
+  92%,
+  100% {
+    opacity: 0;
+  }
+  50.1%,
+  92% {
+    opacity: 1;
+  }
+}
+@keyframes dot3 {
+  0%,
+  50%,
+  92%,
+  100% {
+    opacity: 0;
+  }
+  50.1%,
+  92% {
+    opacity: 1;
+  }
+}
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-height: 90vh;
+}
+
+</style>
+</head>
+
+<body>
+
+  <div class="loader">
+        <svg style="max-width: 144px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-8 -8 64 84" shape-rendering="crispEdges">
+
+      <defs>
+        <pattern id="pattern" width="8" height="8" patternUnits="userSpaceOnUse" x="-4" y="-4">
+          <path d="M 0 0 L8 0 8 8 0 8 z" fill="none"></path>
+        </pattern>
+      </defs>
+
+      <g
+         class="snake-group"
+         stroke-linejoin="miter"
+         stroke-linecap="square"
+         stroke-width="8"
+         fill="none">
+
+        <path class="dot dot-1" d="M28,48 l8,0z" />
+        <path class="dot dot-2" d="M-4,48 l8,0z" />
+        <path class="dot dot-3" d="M4,16 l8,0z" />
+
+        <path class="snake"
+              d="M0 16 h48 v16 H32 v32 H0 V48 h16 V0 H0 v16"/>
+      </g>
+      <rect x="-4.5" y="-4.5" width="57" height="73" fill="url(#pattern)"></rect>
+    </svg>
+  </div>
+
+<!-- load start -->
+<div id="load" style="display:none;">
+  <div class="bg"></div>
+  <div class="circle tra20">
+    <svg class="base" width="500" height="500" viewBox="0 0 500 500">
+      <circle class="c1" cx="250" cy="250" r="248" stroke="#fff" stroke-width="2" fill="none"></circle>
+      <circle class="c2" cx="250" cy="250" r="248" stroke="#fff" stroke-width="2" fill="none"></circle>
+    </svg>
+    <p class="logo js-blur"><img src="" alt="Events"></p>
+  </div>
+</div>
+<div id="page_trans">
+  <div class="circle tra20">
+    <svg class="base" width="500" height="500" viewBox="0 0 500 500">
+      <circle class="c1" cx="250" cy="250" r="248" stroke="#fff" stroke-width="2" fill="none"></circle>
+      <circle class="c2" cx="250" cy="250" r="248" stroke="#fff" stroke-width="2" fill="none"></circle>
+    </svg>
+  </div>
+</div><!-- load end -->
+
+<!-- wrapper start -->
+<div id="wrapper" class="js-height_set tra20">
+
+
+  <!-- ajax_area start -->
+  <div id="ajax_area">
+    <div id="works_list" class="tra20">
+      <div class="fixed">
+        <div class="circle">
+          <svg class="base forpc" width="464" height="464" viewBox="0 0 464 464">
+            <circle class="c1" cx="232" cy="232" r="230" stroke="#fff" stroke-width="2" fill="none"></circle>
+            <circle class="c2 tra10" cx="232" cy="232" r="230" stroke="#fff" stroke-width="2" fill="none"></circle>
+          </svg>
+        </div>
+        <p class="member_text forpc">THE WORK OF</p>
+        <p class="active js-text f_trump forpc js-op">ALL PROJECTS</p>
+      </div>
+
+      <div class="member_block forsp">
+        <p class="member_text">THE WORK OF</p>
+        <p class="member_text2 active js-text f_trump js-op">ALL PROJECTS</p>
+      </div>
+
+
+      <div class="filter js-sc_sp">
+        <p class="txt">Team</p>
+        <ul class="sort forpc">
+          <li><div class="js-text_btn rx360"><a href="#ALL" class="js-filter on tra10 js-text_btn_h" filter="all" title="ALL TEAM MEMBERS">All</a></div></li>
+          <li><div class="js-text_btn rx360"><a href="#DIGITA" class="js-filter tra10 js-text_btn_h" filter="vogue" title="VOGUE">VOGUE</a></div></li>
+          <li><div class="js-text_btn rx360"><a href="#BRAND_IDENTITY" class="js-filter tra10 js-text_btn_h" filter="cp" title="CAMPUS PRINCESS">CAMPUS PRINCESS</a></div></li>
+          <li><div class="js-text_btn rx360"><a href="#CAMPAIGNS" class="js-filter tra10 js-text_btn_h" filter="dance" title="DANCE">DANCE</a></div></li>
+          <li><div class="js-text_btn rx360"><a href="#VIDEO" class="js-filter tra10 js-text_btn_h" filter="drama" title="DRAMA">DRAMA</a>
+          <li><div class="js-text_btn rx360"><a href="#PHOTOGRAPHY" class="js-filter tra10 js-text_btn_h" filter="nukkad" title="NUKKAD">NUKKAD</a>
+          <li><div class="js-text_btn rx360"><a href="#INSTALLATIONS" class="js-filter tra10 js-text_btn_h" filter="yp" title="YOUGHT PARLIAMENT">YOUGHT PARLIAMENT</a></div></li>
+          <li><div class="js-text_btn rx360"><a href="#PBT" class="js-filter tra10 js-text_btn_h" filter="music" title="MUSIC">MUSIC</a></div></li>
+        </ul>
+        <div class="forsp box js-filter_popup"><span>ALL PROJECTS</span></div>
+      </div>
+
+      <ul class="list clearfix">
+                                          <li class="vogue cp asako-tomotani chace-fedor js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/vishal_jain.jpg" class="tra20"/>
+            <h2 class="title js-text_btn_h f_trump">Vishal Jain</h2>
+<h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+          </a>
+        </li>
+                              <li class="vogue yoshiyuki-sasaki shun-okada jin-okuma melanie-hubert js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/himanshi_tulsiani.jpg" class="tra20"/>
+            <h2 class="title js-text_btn_h f_trump">Himanshi Tulsiani</h2>
+            <h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+          </a>
+        </li><!-- pbt video asako-tomotani chace-fedor js-sc js-blur tra20 js-text_btn rx360 left on
+                  pbt video asako-tomotani chace-fedor js-sc js-blur tra20 js-text_btn rx360 -->
+                              <li class="vogue spon yoshiyuki-sasaki takayuki-yokoyama js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/aakanksha-chauhan.jpg" class="tra20"/>
+            <h2 class="title js-text_btn_h f_trump">Aakanksha Chauhan</h2>
+          </a>
+        </li>
+                              <li class="cp eventmng ryo-miyakawa taeko-hamamoto takuya-kenmoku js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/muskan_agarwal.jpg" class="tra20" />
+            <h2 class="title js-text_btn_h f_trump">Muskan Agarwal</h2>
+            <h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+          </a>
+        </li>
+                              <li class="dance chace-fedor js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/nishank_bhati.jpg" class="tra20" alt="TAKASHI MURAKAMI x VANS" />
+            <h2 class="title js-text_btn_h f_trump">Nishank Bhati</h2>
+            <h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+          </a>
+        </li>
+                              <li class="dance shun-okada js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/shreya_rajput.jpg" class="tra20" alt="SQUEEZE MUSIC PROJECT" />
+            <h2 class="title js-text_btn_h f_trump">Shreya Rajput</h2>
+            <h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+          </a>
+        </li>
+                              <li class="dance shun-okada ryo-miyakawa takayuki-yokoyama js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/riya_goyal.jpg" class="tra20"/>
+            <h2 class="title js-text_btn_h f_trump">Riya Goyal</h2>
+            <h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+          </a>
+        </li>
+                              <li class="dance asako-tomotani kenta-takahashi melanie-hubert ryo-miyakawa js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/nanyam_shukla.jpg" class="tra20" alt="parth singh" />
+            <h2 class="title js-text_btn_h f_trump">Nanyam Shukla</h2>
+          </a>
+        </li>
+                              <li class="dance asako-tomotani chace-fedor js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/mani_goyal.jpg" class="tra20"/>
+            <h2 class="title js-text_btn_h f_trump">Mani Goyal</h2>
+          </a>
+        </li>
+                              <li class="dance jin-okuma ryo-miyakawa js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/pranjal_jain.jpg" class="tra20"/>
+            <h2 class="title js-text_btn_h f_trump">Pranjal Jain</h2>
+          </a>
+        </li>
+                              <li class="drama yoshiyuki-sasaki js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/meenal_gupta.jpeg" class="tra20" alt="MOUSSY JEANS BRAND MOVIE" />
+            <h2 class="title js-text_btn_h f_trump">Meenal Gupta</h2>
+            <h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+          </a>
+        </li>
+                              <li class="drama chace-fedor js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/shivam_sharma.jpg" class="tra20" alt="BnA x POWEREDBY.TOKYO" />
+            <h2 class="title js-text_btn_h f_trump">Shivam Sharma</h2>
+          </a>
+        </li>
+                              <li class="drama digital installations ryo-miyakawa js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/ujjawal_agarwal.jpg" class="tra20" alt="SHANGHAI LIGHTS INSTALLATION" />
+            <h2 class="title js-text_btn_h f_trump">Ujjawal Agarwal</h2>
+          </a>
+        </li>
+                              <li class="drama yoshiyuki-sasaki js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/anchal-tulsiani.jpg" class="tra20" alt="Ashish totla"/>
+            <h2 class="title js-text_btn_h f_trump">Aanchal Tulsiani</h2>
+          </a>
+        </li>
+                              <li class="drama chace-fedor jin-okuma js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/shivansh-baijal.png" class="tra20"/>
+            <h2 class="title js-text_btn_h f_trump">Shivansh Baijal</h2>
+          </a>
+        </li>
+                              <li class="nukkad yoshiyuki-sasaki shun-okada jin-okuma ryo-miyakawa ryota-taniguchi taeko-hamamoto takayuki-yokoyama takuya-kenmoku tsubasa-kamioka yoshiyuki-kume js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/pranshu_garg.jpg" class="tra20" alt="LOGOS BY MONOPO" />
+            <h2 class="title js-text_btn_h f_trump">Pranshu Garg</h2>
+            <h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+          </a>
+        </li>
+                              <li class="nukkad yoshiyuki-sasaki jin-okuma ryo-miyakawa ryota-taniguchi tsubasa-kamioka yoshiyuki-kume js-sc js-blur tra20 js-text_btn rx360">
+          <a href="" class="pjax">
+            <img src="images/team2/shaily_baheti.jpg" class="tra20"/>
+            <h2 class="title js-text_btn_h f_trump">Shaily Baheti</h2>
+          </a>
+        </li>
+        <li class="nukkad chace-fedor js-sc js-blur tra20 js-text_btn rx360">
+<a href="" class="pjax">
+<img src="images/team2/disha_kothari.jpg" class="tra20" alt="disha kothari" />
+<h2 class="title js-text_btn_h f_trump">Disha Kothari</h2>
+</a>
+</li>
+        <li class="nukkad digital installations ryo-miyakawa js-sc js-blur tra20 js-text_btn rx360">
+<a href="" class="pjax">
+<img src="images/team2/smriti_gupta.jpg" class="tra20" alt="SHANGHAI LIGHTS INSTALLATION" />
+<h2 class="title js-text_btn_h f_trump">Smriti Gupta</h2>
+</a>
+</li>
+        <li class="nukkad yoshiyuki-sasaki js-sc js-blur tra20 js-text_btn rx360">
+<a href="" class="pjax">
+<img src="images/team2/ujjwal_madan.jpg" class="tra20" alt="Ashish totla"/>
+<h2 class="title js-text_btn_h f_trump">Ujjwal Madan</h2>
+</a>
+</li>
+        <li class="nukkad chace-fedor jin-okuma js-sc js-blur tra20 js-text_btn rx360">
+<a href="" class="pjax">
+<img src="images/team2/abhishek_bagariya.jpg" class="tra20"/>
+<h2 class="title js-text_btn_h f_trump">Abhishek Bagariya</h2>
+</a>
+</li>
+        <li class="yp yoshiyuki-sasaki shun-okada jin-okuma ryo-miyakawa ryota-taniguchi taeko-hamamoto takayuki-yokoyama takuya-kenmoku tsubasa-kamioka yoshiyuki-kume js-sc js-blur tra20 js-text_btn rx360">
+<a href="" class="pjax">
+<img src="images/team2/ravi_sharma.jpg" class="tra20" alt="LOGOS BY MONOPO" />
+<h2 class="title js-text_btn_h f_trump">Ravi Sharma</h2>
+<h3 class="cate js-text_btn_h js-text_btn_h">0123456789</h3>
+</a>
+</li>
+        <li class="yp yoshiyuki-sasaki jin-okuma ryo-miyakawa ryota-taniguchi tsubasa-kamioka yoshiyuki-kume js-sc js-blur tra20 js-text_btn rx360">
+<a href="" class="pjax">
+<img src="images/team2/arun_phogat.jpg" class="tra20"/>
+<h2 class="title js-text_btn_h f_trump">Arun Phogat</h2>
+</a>
+</li>
+
+      </ul>
+    </div>
+
+
+  </div>
+  <!-- ajax_area end -->
+
+</div>
+<!-- wrapper end -->
+
+<!-- popup start -->
+<div id="popup" class="forsp">
+  <div id="btn_menu_close" class="tra10">
+    <div class="bar">
+      <span class="s1 tra05"></span>
+      <span class="s2 tra05"></span>
+      <span class="s3 tra05"></span>
+    </div>
+  </div>
+
+  <div id="filter">
+    <ul class="sort">
+      <li class="js-sc_h tra20 txt">Team</li>
+      <li class="js-sc_h tra20 delay01"><a href="#ALL" class="js-filter on" filter="all" title="ALL PROJECT">ALL TEAM</a></li>
+      <li class="js-sc_h tra20 delay02"><a href="#DIGITAL" class="js-filter" filter="vogue" title="VOGUE">VOGUE</a></li>
+      <li class="js-sc_h tra20 delay03"><a href="#BRAND_IDENTITY" class="js-filter" filter="cp" title="CAMPUS PRINCESS">CAMPUS PRINCESS</a></li>
+      <li class="js-sc_h tra20 delay04"><a href="#CAMPAIGNS" class="js-filter" filter="dance" title="DANCE">DANCE</a></li>
+      <li class="js-sc_h tra20 delay05"><a href="#VIDEO" class="js-filter" filter="drama" title="DRAMA">DRAMA</a></li>
+      <li class="js-sc_h tra20 delay06"><a href="#PHOTOGRAPHY" class="js-filter" filter="nukkad" title="NUKKAD">NUKKAD</a></li>
+      <li class="js-sc_h tra20 delay08"><a href="#PBT" class="js-filter" filter="yp" title="YOUGHT PARLIAMENT">YOUGHT PARLIAMENT</a></li>
+      <li class="js-sc_h tra20 delay08"><a href="#PBT" class="js-filter" filter="music" title="MUSIC">MUSIC</a></li>
+    </ul>
+  </div>
+</div>
+<!-- popup end -->
+
+<script type="text/javascript">
+      window.onload = function() {
+          document.querySelector(".loader").style.display="none";
+      }
+  </script>
+
+</body>
+</html>
