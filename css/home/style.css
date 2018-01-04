@@ -7,9 +7,10 @@
       }
       .row2{
         position: absolute;z-index: 5;
-        bottom: 5px;
-        right: 5px;
+        bottom: 10px;
+        right: 10px;
         font-size:20px;
+        cursor: pointer;
       }
       @media screen and (max-width:500px) {
           .row1,.row2{
@@ -31,7 +32,7 @@
       display: block;
       margin: 30px auto 0;
       padding: 14px 15px;
-      color: #fff;
+      color: #000;
       font-size:20px;
       font-weight: bold;
       text-align: center;
@@ -60,7 +61,7 @@
       transition: all 0.75s ease 0s;
       }
       a.animated-button:link:hover, a.animated-button:visited:hover {
-      color: #FFF;
+      color: #000;
       text-shadow: none;
       }
       a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
@@ -71,7 +72,7 @@
       display: block;
       margin: 30px auto 0;
       padding: 14px 15px;
-      color: #fff;
+      color: #000;
       font-size:14px;
       border-radius: 0;
       font-weight: bold;
@@ -100,7 +101,7 @@
 
       a.animated-button.sandy-one {
       border: 2px solid #AEA8D3;
-      color: #FFF;
+      color: #000;
       }
       a.animated-button.sandy-one:after {
       border: 3px solid #AEA8D3;
@@ -114,7 +115,7 @@
       a.animated-button.sandy-one:hover:after {
       height: 120% !important;
       opacity: 1;
-      color: #FFF;
+      color: #000;
       }
 
 .container{
