@@ -16,7 +16,7 @@
 			background-position: center;
 			position: relative;
 		}
-		img{
+		.logo{
 			width: 80px;
 			height: 80px;
 			margin: 2% 0 0 2%;
@@ -459,15 +459,129 @@
     width: 100%;
     display: flex;
 		position: fixed;
-		z-index: 200;
+		z-index: 00;
 		background-color: gray;
 		animation: anim1 5s;
 		animation-fill-mode: forwards;
+		transform: scale(1);
 		}
 		@keyframes anim1 {
 				0%{top: 0;}
 				99%{top: 0;}
 				100%{top:100vh;}
+		}
+		.car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8,.car9{
+			position: absolute;
+			width: 80px;
+			opacity: 0;
+		}
+		.car1{
+			top: 5%;
+			left: 45%;
+			animation: anim1 10s ease-in-out infinite;
+			animation-direction: alternate;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation-direction: alternate;
+			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation-direction: alternate;
+		}
+		.car2{
+			top: 25%;
+			left: 10%;
+			animation: anim1 10s ease-in-out infinite;
+			animation-delay: 4s;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation-delay: 4s;
+			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation-delay: 4s;
+		}
+		.car3{
+			top: 80%;
+			left: 45%;
+			animation: anim1 10s ease-in-out infinite;
+			animation-delay: 1s;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation-delay: 1s;
+			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation-delay: 1s;
+		}
+		.car4{
+			top: 15%;
+			left: 70%;
+			animation: anim1 10s ease-in-out infinite;
+			animation-delay: 2s;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation-delay: 2s;
+			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation-delay: 2s;
+		}
+		.car5{
+			top: 60%;
+			left: 70%;
+			animation: anim1 10s ease-in-out infinite;
+			animation-delay: 6s;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation-delay: 6s;
+			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation-delay: 6s;
+		}
+		.car6{
+			top: 30%;
+			left: 90%;
+			animation: anim1 10s ease-in-out infinite;
+			animation-delay: 4s;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation-delay: 4s;
+			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation-delay: 4s;
+		}
+		.car7{
+			top: 80%;
+			left: 10%;
+			animation: anim1 10s ease-in-out infinite;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-moz-animation: anim1 10s ease-in-out infinite;
+		}
+		.car8{
+			top: 65%;
+			left: 10%;
+			animation: anim1 10s ease-in-out infinite;
+			animation-delay: 2s;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation-delay: 2s;
+			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation-delay: 2s;
+		}
+		.car9{
+			top: 10%;
+			left: 20%;
+			animation: anim1 10s ease-in-out infinite;
+			animation-delay: 6s;
+			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation-delay: 6s;
+			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation-delay: 6s;
+		}
+		@keyframes anim1 {
+				0%{opacity: 0;}
+				5%{opacity: 1;}
+				20%{opacity: 1;}
+				25%{opacity: 0;}
+				100%{opacity: 0;}
+		}
+		@-webkit-keyframes anim1 {
+				0%{opacity: 0;}
+				5%{opacity: 1;}
+				20%{opacity: 1;}
+				25%{opacity: 0;}
+				100%{opacity: 0;}
+		}
+		@-moz-keyframes anim1 {
+				0%{opacity: 0;}
+				5%{opacity: 1;}
+				20%{opacity: 1;}
+				25%{opacity: 0;}
+				100%{opacity: 0;}
 		}
 
 		</style>
@@ -540,7 +654,7 @@
 
 		<div class="sticker-bottom">
 			<hr>
-			<p>VIVACITY 2018</p>
+			<p>VIVACITY</p>
 			<hr>
 		</div><!-- /.sticker-bottom-->
 
@@ -565,11 +679,20 @@
 </div>
 
 	<div class="container">
-		<img src="images/home/vivacity-logo.png" alt="">
+		<img class="logo" src="images/home/vivacity-logo.png" alt="">
+		<img class="car1" src="images/home/BugsBunny-min.png" alt="">
+		<img class="car2" src="images/home/Jhonny-min.png" alt="">
+		<img class="car3" src="images/home/Mickey-min.png" alt="">
+		<img class="car4" src="images/home/Mojojojo-min.png" alt="">
+		<img class="car5" src="images/home/Oswald-min.png" alt="">
+		<img class="car6" src="images/home/Pikachu-min.png" alt="">
+		<img class="car7" src="images/home/Scooby-min.png" alt="">
+		<img class="car8" src="images/home/Shinchan-min.png" alt="">
+		<img class="car9" src="images/home/Tom-min.png" alt="">
 	</div>
 
 	<div class="row2">
-		<a href="form.html"><img src="images/home/registration.png" style="width:100px;height:100px;" alt=""></a>
+		<img src="images/home/registration.png" style="width:100px;height:100px;" alt="">
   </div>
 
 <!-- handbuger html -->
