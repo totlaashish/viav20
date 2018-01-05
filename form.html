@@ -4,73 +4,85 @@
     <meta charset='utf-8'>
     <meta content='IE=edge' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="demo.css" />
+		<link rel="stylesheet" type="text/css" href="set1.css" />
 
     <style media="screen">
     *{
       padding: 0;
       margin: 0;
     }
-    body,html{
-      width: 100%;
-      height: 100vh;
+    body{
+      background-color: black;
     }
-      .content{
-        width: 100%;
-        height: 100vh;
-        background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url("images/form/forest.jpg");
-        background-size: cover;
-        background-position: center;
-        overflow-x: hidden;
+    h1{
+      font-family: 'Marck Script', cursive;
+      height: 75px;
+      padding-top: 25px;
+      font-size: 40px;
+      text-align: center;
+    }
+      .container{
+        width: 70%;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background:black;
+        color: white;
       }
+      .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten{
+        margin-top: 10vh;
+        position: relative;
+        font-size: 30px;
+        height: 200px;
+        font-family: 'Bad Script', cursive;
+        opacity: .5;
+        transition: .5s ease-in-out;
+      }
+      .one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover,.eight:hover,.nine:hover,.ten:hover{
+        font-size: 40px;
+        opacity: 1;
+}
+
       input{
         border: 0;
         outline: 0;
-        border-bottom: 2px solid #696761;
-        color: #9f8f68;
-        text-align: center;
-        word-break: break-word;
-        white-space: pre-wrap;
-        font-size: 20px;
         background-color: transparent;
-      }
-      .two{
-        width: 80%;
-        margin: 0 auto;
-        font-size: 20px;
-        text-align: justify;
-        padding: 20px;
+        border-bottom: white solid 2px;
+        width: 50%;
+        font-size: 30px;
         color: white;
-      }
-      .two>*{
-        padding: 5px;
-        margin: 5px 0;
       }
       .sub{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-      }
-      .sub>input{
-        font-size: 25px;
-        cursor: pointer;
-      }
-      select{
-        background-color: #9f8f68;
+        background-color: red;
         border: 0;
-        outline: 0;
+        opacity: 1;
       }
-      header{
-        color: white;
-        font-size: 25px;
-        text-align: center;
-        padding: 40px 0 20px 0;
+      .outer{
         width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap-reverse;
       }
-      u{
-        text-decoration-color:#9f8f67
+      .first{
+        width: 100%;
+        height: 100vh;
+        transition: .4s linear;
+      }
+      .second,.third,.forth,.fifth,.sixth,.seventh,.eighty{
+        width:0;
+        height: 100%;
+        display: none;
+        transition: .4s linear;
       }
     </style>
+
   </head>
   <body>
     <!-- Contact Form - sent to a Google Sheet -->
@@ -78,54 +90,612 @@
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
 onload="if(submitted) {window.location='http://vivacity.lnmiit.ac.in';}"></iframe>
 
+<div class="outer">
 
-<div class="content">
+<div class="first">
+  <div class="grid">
+    <figure class="effect-lily" onclick="fun2();">
+      <img src="12.jpg" alt="img12"/>
+      <figcaption>
+        <div>
+          <h2>LIFE 'N' STYLE</h2>
+        </div>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+    <figure class="effect-lily" onclick="fun3();">
+      <img src="1.jpg" alt="img1"/>
+      <figcaption>
+        <div>
+          <h2>Nice <span>Lily</span></h2>
+          <p>Lily likes to play with crayons and pencils</p>
+        </div>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+    <figure class="effect-lily" onclick="fun4();">
+      <img src="12.jpg" alt="img12"/>
+      <figcaption>
+        <div>
+          <h2>Nice <span>Lily</span></h2>
+          <p>Lily likes to play with crayons and pencils</p>
+        </div>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+    <figure class="effect-lily" onclick="fun5();">
+      <img src="1.jpg" alt="img1"/>
+      <figcaption>
+        <div>
+          <h2>Nice <span>Lily</span></h2>
+          <p>Lily likes to play with crayons and pencils</p>
+        </div>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+    <figure class="effect-lily" onclick="fun6();">
+      <img src="12.jpg" alt="img12"/>
+      <figcaption>
+        <div>
+          <h2>Nice <span>Lily</span></h2>
+          <p>Lily likes to play with crayons and pencils</p>
+        </div>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+    <figure class="effect-lily" onclick="fun7();">
+      <img src="1.jpg" alt="img1"/>
+      <figcaption>
+        <div>
+          <h2>Nice <span>Lily</span></h2>
+          <p>Lily likes to play with crayons and pencils</p>
+        </div>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+    <figure class="effect-lily" onclick="fun8();">
+      <img src="12.jpg" alt="img12"/>
+      <figcaption>
+        <div>
+          <h2>Nice <span>Lily</span></h2>
+          <p>Lily likes to play with crayons and pencils</p>
+        </div>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="second">
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
-<header>
-  <u>Vivacity 2018 Registrations</u>
-</header>
-
+<div class="container">
+  <h1>
+  Vivacity 2018 Registrations
+	</br>
+	</br>
+</h1>
 <div class="one">
-  <div class="two">
-</br>Hello, my name is
-	<input type="text" autofocus required placeholder="Tony stark" name="entry.1619957618"/>
-  . I am from
-<input type="text" placeholder="LNMIIT" required name="entry.1752921588"/>
- college. You can reach me on my phone at
-	<input type="text" placeholder="8504xxxxxx" pattern="[0-9]" required name="entry.1060262953"/>
-  or via email at
-	<input type="text" placeholder="your@email.com" required name="entry.1327166253"/>
-
-. The name of our team is
-	<input type="text" placeholder="Team name" required name="entry.150632985"/>
-	and we are a group of
-	<input type="text" placeholder="number of members" required name="entry.18825988"/>
-  members
-	. Interested in participating in
+</br>Name:
+</br>
+	<input type="text" required autofocus name="entry.1619957618"/>
+</div>
+<div class="two">
+	email</br>
+	<input type="text" required name="entry.1327166253"/>
+</div>
+<div class="three">
+	Contact Number</br>
+	<input type="text" required name="entry.1060262953"/>
+</div>
+<div class="four">
+	Which college/institute do you belong to?</br>
+	<input type="text" required name="entry.1752921588"/>
+</div>
+<div class="five">
+	Team Name</br>
+	<input type="text" required name="entry.150632985"/>
+</div>
+<div class="ten">
+	No. of Team Members</br>
+	<input type="text" required name="entry.18825988"/>
+</div>
+<div class="six">
+	Interested in participating in</br>
 	<select name="entry.226987026" >
     	<option value="Event one">Event one</option>
     	<option value="event two">Event two</option>
     	<option value="event three">Event three</option>
     	<option value="Event four">Event four</option>
     </select>
+  </div>
+  <div class="seven">
+    Paytm Transaction ID</br>
+    <input type="text" required name="entry.1836594660"/>
+  </div>
+  <div class="eight">
+	Remarks</br>
+	<input type="text" required name="entry.1251489619"/>
+</div>
 
- . My Paytm Transaction ID is
-    <input type="text" name="entry.1836594660"/>
-	Remarks
-	<input type="text" name="entry.1251489619"/>
-  .
 	<input type="hidden" name="fvv" value="1">
 	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4375361186652912300&quot;]">
 	<input type="hidden" name="pageHistory" value="0">
 	<input type="hidden" name="fbzx" value="-4375361186652912300">
 
 
-<div class="sub">
-	<input type="submit" value = "SUBMIT" target="_blank">
-</div>
+<div class="nine">
+	<input class="sub" type="submit" value = "submit" target="_blank">
 </div>
 </div>
 </form>
 </div>
+<div class="third">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
+<div class="container">
+  <h1>
+  Vivacity 2018 Registrations
+	</br>
+	</br>
+</h1>
+<div class="one">
+</br>Name:
+</br>
+	<input type="text" required autofocus name="entry.1619957618"/>
+</div>
+<div class="two">
+	email</br>
+	<input type="text" required name="entry.1327166253"/>
+</div>
+<div class="three">
+	Contact Number</br>
+	<input type="text" required name="entry.1060262953"/>
+</div>
+<div class="four">
+	Which college/institute do you belong to?</br>
+	<input type="text" required name="entry.1752921588"/>
+</div>
+<div class="five">
+	Team Name</br>
+	<input type="text" required name="entry.150632985"/>
+</div>
+<div class="ten">
+	No. of Team Members</br>
+	<input type="text" required name="entry.18825988"/>
+</div>
+<div class="six">
+	Interested in participating in</br>
+	<select name="entry.226987026" >
+    	<option value="Event one">Event one</option>
+    	<option value="event two">Event two</option>
+    	<option value="event three">Event three</option>
+    	<option value="Event four">Event four</option>
+    </select>
+  </div>
+  <div class="seven">
+    Paytm Transaction ID</br>
+    <input type="text" required name="entry.1836594660"/>
+  </div>
+  <div class="eight">
+	Remarks</br>
+	<input type="text" required name="entry.1251489619"/>
+</div>
+
+	<input type="hidden" name="fvv" value="1">
+	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4375361186652912300&quot;]">
+	<input type="hidden" name="pageHistory" value="0">
+	<input type="hidden" name="fbzx" value="-4375361186652912300">
+
+
+<div class="nine">
+	<input class="sub" type="submit" value = "submit" target="_blank">
+</div>
+</div>
+</form>
+</div>
+<div class="fourth">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
+<div class="container">
+  <h1>
+  Vivacity 2018 Registrations
+	</br>
+	</br>
+</h1>
+<div class="one">
+</br>Name:
+</br>
+	<input type="text" required autofocus name="entry.1619957618"/>
+</div>
+<div class="two">
+	email</br>
+	<input type="text" required name="entry.1327166253"/>
+</div>
+<div class="three">
+	Contact Number</br>
+	<input type="text" required name="entry.1060262953"/>
+</div>
+<div class="four">
+	Which college/institute do you belong to?</br>
+	<input type="text" required name="entry.1752921588"/>
+</div>
+<div class="five">
+	Team Name</br>
+	<input type="text" required name="entry.150632985"/>
+</div>
+<div class="ten">
+	No. of Team Members</br>
+	<input type="text" required name="entry.18825988"/>
+</div>
+<div class="six">
+	Interested in participating in</br>
+	<select name="entry.226987026" >
+    	<option value="Event one">Event one</option>
+    	<option value="event two">Event two</option>
+    	<option value="event three">Event three</option>
+    	<option value="Event four">Event four</option>
+    </select>
+  </div>
+  <div class="seven">
+    Paytm Transaction ID</br>
+    <input type="text" required name="entry.1836594660"/>
+  </div>
+  <div class="eight">
+	Remarks</br>
+	<input type="text" required name="entry.1251489619"/>
+</div>
+
+	<input type="hidden" name="fvv" value="1">
+	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4375361186652912300&quot;]">
+	<input type="hidden" name="pageHistory" value="0">
+	<input type="hidden" name="fbzx" value="-4375361186652912300">
+
+
+<div class="nine">
+	<input class="sub" type="submit" value = "submit" target="_blank">
+</div>
+</div>
+</form>
+</div>
+<div class="fifth">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
+<div class="container">
+  <h1>
+  Vivacity 2018 Registrations
+	</br>
+	</br>
+</h1>
+<div class="one">
+</br>Name:
+</br>
+	<input type="text" required autofocus name="entry.1619957618"/>
+</div>
+<div class="two">
+	email</br>
+	<input type="text" required name="entry.1327166253"/>
+</div>
+<div class="three">
+	Contact Number</br>
+	<input type="text" required name="entry.1060262953"/>
+</div>
+<div class="four">
+	Which college/institute do you belong to?</br>
+	<input type="text" required name="entry.1752921588"/>
+</div>
+<div class="five">
+	Team Name</br>
+	<input type="text" required name="entry.150632985"/>
+</div>
+<div class="ten">
+	No. of Team Members</br>
+	<input type="text" required name="entry.18825988"/>
+</div>
+<div class="six">
+	Interested in participating in</br>
+	<select name="entry.226987026" >
+    	<option value="Event one">Event one</option>
+    	<option value="event two">Event two</option>
+    	<option value="event three">Event three</option>
+    	<option value="Event four">Event four</option>
+    </select>
+  </div>
+  <div class="seven">
+    Paytm Transaction ID</br>
+    <input type="text" required name="entry.1836594660"/>
+  </div>
+  <div class="eight">
+	Remarks</br>
+	<input type="text" required name="entry.1251489619"/>
+</div>
+
+	<input type="hidden" name="fvv" value="1">
+	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4375361186652912300&quot;]">
+	<input type="hidden" name="pageHistory" value="0">
+	<input type="hidden" name="fbzx" value="-4375361186652912300">
+
+
+<div class="nine">
+	<input class="sub" type="submit" value = "submit" target="_blank">
+</div>
+</div>
+</form>
+</div>
+<div class="sixth">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
+<div class="container">
+  <h1>
+  Vivacity 2018 Registrations
+	</br>
+	</br>
+</h1>
+<div class="one">
+</br>Name:
+</br>
+	<input type="text" required autofocus name="entry.1619957618"/>
+</div>
+<div class="two">
+	email</br>
+	<input type="text" required name="entry.1327166253"/>
+</div>
+<div class="three">
+	Contact Number</br>
+	<input type="text" required name="entry.1060262953"/>
+</div>
+<div class="four">
+	Which college/institute do you belong to?</br>
+	<input type="text" required name="entry.1752921588"/>
+</div>
+<div class="five">
+	Team Name</br>
+	<input type="text" required name="entry.150632985"/>
+</div>
+<div class="ten">
+	No. of Team Members</br>
+	<input type="text" required name="entry.18825988"/>
+</div>
+<div class="six">
+	Interested in participating in</br>
+	<select name="entry.226987026" >
+    	<option value="Event one">Event one</option>
+    	<option value="event two">Event two</option>
+    	<option value="event three">Event three</option>
+    	<option value="Event four">Event four</option>
+    </select>
+  </div>
+  <div class="seven">
+    Paytm Transaction ID</br>
+    <input type="text" required name="entry.1836594660"/>
+  </div>
+  <div class="eight">
+	Remarks</br>
+	<input type="text" required name="entry.1251489619"/>
+</div>
+
+	<input type="hidden" name="fvv" value="1">
+	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4375361186652912300&quot;]">
+	<input type="hidden" name="pageHistory" value="0">
+	<input type="hidden" name="fbzx" value="-4375361186652912300">
+
+
+<div class="nine">
+	<input class="sub" type="submit" value = "submit" target="_blank">
+</div>
+</div>
+</form>
+</div>
+<div class="seventh">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
+<div class="container">
+  <h1>
+  Vivacity 2018 Registrations
+	</br>
+	</br>
+</h1>
+<div class="one">
+</br>Name:
+</br>
+	<input type="text" required autofocus name="entry.1619957618"/>
+</div>
+<div class="two">
+	email</br>
+	<input type="text" required name="entry.1327166253"/>
+</div>
+<div class="three">
+	Contact Number</br>
+	<input type="text" required name="entry.1060262953"/>
+</div>
+<div class="four">
+	Which college/institute do you belong to?</br>
+	<input type="text" required name="entry.1752921588"/>
+</div>
+<div class="five">
+	Team Name</br>
+	<input type="text" required name="entry.150632985"/>
+</div>
+<div class="ten">
+	No. of Team Members</br>
+	<input type="text" required name="entry.18825988"/>
+</div>
+<div class="six">
+	Interested in participating in</br>
+	<select name="entry.226987026" >
+    	<option value="Event one">Event one</option>
+    	<option value="event two">Event two</option>
+    	<option value="event three">Event three</option>
+    	<option value="Event four">Event four</option>
+    </select>
+  </div>
+  <div class="seven">
+    Paytm Transaction ID</br>
+    <input type="text" required name="entry.1836594660"/>
+  </div>
+  <div class="eight">
+	Remarks</br>
+	<input type="text" required name="entry.1251489619"/>
+</div>
+
+	<input type="hidden" name="fvv" value="1">
+	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4375361186652912300&quot;]">
+	<input type="hidden" name="pageHistory" value="0">
+	<input type="hidden" name="fbzx" value="-4375361186652912300">
+
+
+<div class="nine">
+	<input class="sub" type="submit" value = "submit" target="_blank">
+</div>
+</div>
+</form>
+</div>
+<div class="eighty">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
+<div class="container">
+  <h1>
+  Vivacity 2018 Registrations
+	</br>
+	</br>
+</h1>
+<div class="one">
+</br>Name:
+</br>
+	<input type="text" required autofocus name="entry.1619957618"/>
+</div>
+<div class="two">
+	email</br>
+	<input type="text" required name="entry.1327166253"/>
+</div>
+<div class="three">
+	Contact Number</br>
+	<input type="text" required name="entry.1060262953"/>
+</div>
+<div class="four">
+	Which college/institute do you belong to?</br>
+	<input type="text" required name="entry.1752921588"/>
+</div>
+<div class="five">
+	Team Name</br>
+	<input type="text" required name="entry.150632985"/>
+</div>
+<div class="ten">
+	No. of Team Members</br>
+	<input type="text" required name="entry.18825988"/>
+</div>
+<div class="six">
+	Interested in participating in</br>
+	<select name="entry.226987026" >
+    	<option value="Event one">Event one</option>
+    	<option value="event two">Event two</option>
+    	<option value="event three">Event three</option>
+    	<option value="Event four">Event four</option>
+    </select>
+  </div>
+  <div class="seven">
+    Paytm Transaction ID</br>
+    <input type="text" required name="entry.1836594660"/>
+  </div>
+  <div class="eight">
+	Remarks</br>
+	<input type="text" required name="entry.1251489619"/>
+</div>
+
+	<input type="hidden" name="fvv" value="1">
+	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4375361186652912300&quot;]">
+	<input type="hidden" name="pageHistory" value="0">
+	<input type="hidden" name="fbzx" value="-4375361186652912300">
+
+
+<div class="nine">
+	<input class="sub" type="submit" value = "submit" target="_blank">
+</div>
+</div>
+</form>
+</div>
+</div>
+
+  <script type="text/javascript">
+  var w = window,
+  d = document,
+  e = d.documentElement,
+  g = d.getElementsByTagName('body')[0],
+  x = w.innerWidth || e.clientWidth || g.clientWidth,
+  y = w.innerHeight|| e.clientHeight|| g.clientHeight,
+  m = document.querySelectorAll(".container>div"),
+  n = document.querySelectorAll(".container>div>input");
+console.log(n);
+n[1].autofocus;
+  window.addEventListener("scroll", myFunction);
+
+
+  n[0].addEventListener("keydown", keydownHandler, false);
+function keydownHandler(event)
+{
+if(event.keyCode === 13)
+{
+  n[1].autofocus;
+  m[1].style.fontSize=40+"px";
+  m[1].style.opacity=1;
+}
+}
+
+
+function myFunction() {
+  var a=window.pageXOffset,
+  b=window.pageYOffset;
+
+}
+
+  </script>
+
+  <script type="text/javascript">
+    var first = document.querySelector(".first"),
+        second = document.querySelector(".second");
+        third = document.querySelector(".third");
+        fourth = document.querySelector(".fourth");
+        fifth = document.querySelector(".fifth");
+        sixth = document.querySelector(".sixth");
+        seventh = document.querySelector(".seventh");
+        eighty = document.querySelector(".eighty");
+
+        function fun2() {
+          second.style.display="block";
+          second.style.width=100+"%";
+          first.style.width=0;
+          first.style.display="none";
+        }
+        function fun3() {
+          third.style.display="block";
+          third.style.width=100+"%";
+          first.style.width=0;
+          first.style.display="none";
+        }
+        function fun4() {
+          fourth.style.display="block";
+          fourth.style.width=100+"%";
+          first.style.width=0;
+          first.style.display="none";
+        }
+        function fun5() {
+          fifth.style.display="block";
+          fifth.style.width=100+"%";
+          first.style.width=0;
+          first.style.display="none";
+        }
+        function fun6() {
+          sixth.style.display="block";
+          sixth.style.width=100+"%";
+          first.style.width=0;
+          first.style.display="none";
+        }
+        function fun7() {
+          seventh.style.display="block";
+          seventh.style.width=100+"%";
+          first.style.width=0;
+          first.style.display="none";
+        }
+        function fun8() {
+          eighty.style.display="block";
+          eighty.style.width=100+"%";
+          first.style.width=0;
+          first.style.display="none";
+        }
+  </script>
+
 </body>
 </html>
