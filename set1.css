@@ -16,6 +16,9 @@
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 /* Common style */
@@ -24,13 +27,13 @@
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+	width: 300px;
 }
 
 .grid figure img {
@@ -1141,17 +1144,4 @@ figure.effect-chico:hover p {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
-}
-
-@media screen and (max-width: 50em) {
-	.content1 {
-		padding: 0 10px;
-		text-align: center;
-	}
-	.grid figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 100%;
-	}
 }
