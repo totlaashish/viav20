@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+    <title>Events</title>
+    <link href="css/events/style.css" rel="stylesheet" type="text/css" />
+    <style media="screen">
+    @import url(https://fonts.googleapis.com/css?family=Rancho);
+
+@import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
+
+.photo_container.fade{
+background: #334006;
+border-radius: 6px;
+height: 500px;
+margin: 0 auto;
+overflow: hidden;
+position: relative;
+width: 500px;
+}
+
+.photo_container.fade *{
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.photo_container.fade img {
+height: 520px;
+margin: -10px 0 0 -10px;
+width: 520px;
+}
+
+.photo_container.fade.hover .photo img,
+.photo_container.fade:hover .photo img{
+height: 500px;
+margin: 0 ;
+opacity: 0.5;
+width: 500px;
+}
+
+.photo_container.fade .label {
+color: #fff;
+font-family: 'Rancho', serif;
+font-size: 28px;
+left: 20px;
+letter-spacing: 6px;
+opacity: 1;
+position: absolute;
+top: 14px;
+z-index: 999;
+}
+
+
+.photo_container.fade .description {
+color: #fff;
+left: 0;
+opacity: 0;
+position: absolute;
+-moz-transform: scale(0.95);
+-ms-transform: scale(0.95);
+-webkit-transform: scale(0.95);
+text-align: left;
+top: 100px;
+transform: scale(0.95);
+width: 500px;
+}
+
+.photo_container.fade.hover .description,
+.photo_container.fade:hover .description {
+opacity: 1;
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+.photo_container.fade .description .photo_title{
+border-bottom : 4px solid #fff;
+font-family: 'Sue Ellen Francisco', serif;
+font-size: 48px;
+margin: 0 20px 10px 20px;
+padding-bottom: 10px;
+}
+
+.photo_container.fade .description p{
+font-family: 'Sue Ellen Francisco', serif;
+font-size: 24px;
+margin: 0;
+padding: 20px;
+}
+.loader2{
+  width: 100%;
+    height: 100vh;
+    background-image: url(images/events/super_hero.gif);
+    position: fixed;
+    z-index: 22;
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+.rules{
+  text-align: left;
+}
+.rules>p{
+  padding: 20px 0;
+}
+    </style>
+    <script type="text/javascript">
+      // (function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()
+    </script>
+</head>
+<body class="">
+
+  <div class="loader2">
+
+  </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47064352-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
+<h1>Ivan Daum - Full-stack developper</h1>
+<nav class="navigation">
+  <a href="#" class="back-button">
+    <p></p>
+    <p>Back to Events.</p>
+  </a>
+</nav>
+<div class="loading-bar"><div class="percent"></div></div>
+<div class="loader">
+  <p class="title loading"><span class=''>C</span><span class=''>o</span><span class=''>n</span><span class=''>t</span><span class=''>e</span><span class=''>n</span><span class=''>t</span><span class=''> </span><span class=''>i</span><span class=''>s</span><span class=''> </span><span class=''>l</span><span class=''>o</span><span class=''>a</span><span class=''>d</span><span class=''>i</span><span class=''>n</span><span class=''>g</span><span class=''>.</span></p>
+  <p class="title loaded"><span class=''>A</span><span class=''>l</span><span class=''>l</span><span class=''> </span><span class=''>g</span><span class=''>o</span><span class=''>o</span><span class=''>d</span><span class=''>.</span></p>
+</div>
+<div class="home">
+  <section class="titles">
+    <p class="title initial">
+      <span class='hidden-phone'>S</span><span class='hidden-phone'>c</span><span class='hidden-phone'>r</span><span class='hidden-phone'>o</span><span class='hidden-phone'>l</span><span class='hidden-phone'>l</span><span class='hidden-phone'>.</span>      <span class='visible-phone'>D</span><span class='visible-phone'>r</span><span class='visible-phone'>a</span><span class='visible-phone'>g</span><span class='visible-phone'>.</span>    </p>
+  </section>
+
+  <section class="projects">
+    <div class="projects-content">
+
+        <a id="project-reset" href="#project/reset" class="project c-projects" data-id="169">
+            <h2 class="project-title unselectable project-169">SWARANJALI<p class="excerpt"></p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="images/events/dance.jpg" style="background-image:url(images/events/dance.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-julie-ferrieux" href="#project/julie-ferrieux" class="project c-projects" data-id="166">
+            <h2 class="project-title unselectable project-166">MESCOLANZA<p class="excerpt"></p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="" style="background-image:url(images/events/dance.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-florian-moreau" href="#project/florian-moreau" class="project c-projects" data-id="163">
+            <h2 class="project-title unselectable project-163">Antrakshri<p class="excerpt"></p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="" style="background-image:url(images/events/dance.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-data-viz" href="#project/data-viz" class="project c-projects" data-id="160">
+            <h2 class="project-title unselectable project-160">Verismo (Instrumental)<p class="excerpt"></p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="" style="background-image:url(images/events/dance.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-joffrey-petit" href="#project/joffrey-petit" class="project c-projects" data-id="157">
+            <h2 class="project-title unselectable project-157">Sur Sangam<p class="excerpt"></p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="" style="background-image:url(images/events/dance.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-motostory" href="#project/motostory" class="project c-projects" data-id="154">
+            <h2 class="project-title unselectable project-154">BEAT IT (RAP Battle)<p class="excerpt"></p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="" style="background-image:url(images/events/dance.jpg)"></div>
+            </div>
+
+        </a>
+
+
+        <a id="project-numerama" href="#project/numerama" class="project c-projects" data-id="151">
+            <h2 class="project-title unselectable project-151">Solendious - English Solo<p class="excerpt"></p></h2>
+            <div class="project-container hidden">
+                <div class="cover" data-image="" style="background-image:url(images/events/dance.jpg)"></div>
+            </div>
+
+        </a>
+
+          </div>
+  </section>
+
+  <section class="projects-details">
+            <div class="project-detail" id="reset">
+          <div class="intro">
+              <div class="cover" style="background-image:url(images/events/dance.jpg)"></div>
+              <div class="project-name">
+                <h3>SWARANJALI</h3>
+                <div class="excerpt">
+                    <p></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <h4 style="color:white;text-align: justify;line-height: 27px;">Music is an unparalleled way of expression. Music is a powerful instrument to convey one’s emotions, whether they are violent or calm, passionate or apathetic, un-yearning or abjurant.
+SWARANJALI is a classical and semi-classical Hindi solo singling competition which has two rounds.
+              </h4>
+   </div>
+   <div class="rules">
+    <p style="text-align:center;">RULES FOR THE EVENT</p>
+    <p>1)Performance without any accompanists till elimination round.</p>
+  <p>2)Classical and semi-classical theme preferred.</p>
+  <p>3)The decision of the judges shall be final and binding.</p>
+  <p>4)Judging Criteria will be quality of singing (sur, taal and lay), vocal range, song selection and the overall impact of the song.</p>
+  <p>5)There will be 2 rounds one prelims round and a final round.</p>
+
+    <p style="text-align:center;">PRELIMS</p>
+    <p>1)Prelims rounds will be of "Hindi Solo Singing".</p>
+  <p>2)Participants can perform on any song of their choice.</p>
+  <p>3)Time limit will be 2 to 3 minutes.</p>
+
+  <p style="text-align:center;">FINALS</p>
+  <p>1)Selected singers would be choosing their songs on chit-picking basis.</p>
+  <p>2)Chits will have the name of a singer and a movie.</p>
+  <p>3)Participant can choose either a song sung by the given singer or a song from the given movie.</p>
+  <p>4)Deduction of Points/Marks if singers opt to pick next chit.</p>
+  <p>5) Time limit will be 3 to 5 minutes (including set-up and clearance time).</p>
+  </div>                      <a class="next-post" href="#project/julie-ferrieux">
+              <p>Next Event</p>
+            </a>
+
+        </div>
+      </div>
+
+
+            <div class="project-detail" id="julie-ferrieux">
+          <div class="intro">
+              <div class="cover" style="background-image:url(images/events/dance.jpg)"></div>
+              <div class="project-name">
+                <h3>MESCOLANZA</h3>
+                <div class="excerpt">
+                    <p></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <h4 style="color:white;text-align: justify;line-height: 27px;">When a group of people sing together, they make a chorus. When birds do, it's more like a whole symphony orchestra. Here show your musical enchantment with perfect synchronization of musical notes.
+              </h4>
+   </div>
+   <div class="rules">
+    <p style="text-align:center;">RULES FOR THE EVENT</p>
+    <p>1)There will be only one round.</p>
+  <p>2)The time limit will be 10 minutes (including sound check).</p>
+  <p>3)Team size can be a minimum of 4 and a maximum of 10 vocalists. Maximum of 3 accompanists are allowed.</p>
+  <p>4)A team member can sing and play an instrument as well. However, such a person would be counted as both vocalist and accompanist.</p>
+  <p>5)Participants need to come with their own instruments.</p>
+  <p>6)The team may sing more than one song within the time limit.</p>
+  <p>7)Any Indian language is allowed along with English as well.</p>
+  <p>8)The decision of the judges and the coordinators shall be final and binding in all cases.</p>
+  </div>
+                      <a class="next-post" href="#project/florian-moreau">
+              <p>Next Event</p>
+            </a>
+
+        </div>
+      </div>
+
+
+            <div class="project-detail" id="florian-moreau">
+          <div class="intro">
+              <div class="cover" style="background-image:url(images/events/dance.jpg)"></div>
+              <div class="project-name">
+                <h3>Antrakshri</h3>
+                <div class="excerpt">
+                    <p></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <h4 style="color:white;text-align: justify;line-height: 27px;">You can open the brimming box of your favourite songs and movies with our exciting rounds. In this rendezvous of lyrics and tunes, be ready to memorize even the oldest songs you’ve ever heard. So just come and enjoy with us in our fun-filled antakshari.
+              </h4>
+   </div>
+   <div class="rules">
+    <p style="text-align:center;">RULES FOR THE EVENT</p>
+    <p>1)Complete 'mukhda' of the song should be correct then only points will be given.</p>
+
+  <p>2)There will be counting from 1 to 5 if a team start singing the song but not able to finish it.</p>
+
+  <p>3)The final decision shall be of event coordinators.</p>
+
+  <p>4)There will be a written music quiz from which 4 teams will be short-listed for the final rounds.</p>
+
+  <p style="text-align:center;">ROUNDS</p>
+  <p>1) In the 1st round, you will be given a word on which the first team has to sing then next team will pick a word from the first team and so on. For correct song +10 otherwise 0. This process will take place twice.</p>
+  <p>2) In 2nd round one of the members of each team will pick a chit, in which a song will be written and he or she has to draw something to make the other members guess the song (no letters can be written). For correct song +10 otherwise -5. (This will be a buzzer round) 50 seconds will be given for guessing the name then it will be passed to other teams.
+</p>
+  <p>3) In 3rd round name of 2 Bollywood actors/actresses will be given who have some family relations. The team has to sing a song of any one of them and also guess their family relation. For correct answer 10+10 otherwise -5 if you can't sing any song. This will be an audience around.</p>
+  <p>4) 4th round will be an audio round where tune of a song will be played and you have to start the song and pick up the lyrics from where the music stops. +20 for the correct answer and -10 for the wrong answer.</p>
+  </div>
+                      <a class="next-post" href="#project/data-viz">
+              <p>Next Event</p>
+            </a>
+
+        </div>
+      </div>
+
+
+            <div class="project-detail" id="data-viz">
+          <div class="intro">
+              <div class="cover" style="background-image:url(images/events/dance.jpg)"></div>
+              <div class="project-name">
+                <h3>Verismo (Instrumental)</h3>
+                <div class="excerpt">
+                    <p></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <h4 style="color:white;text-align: justify;line-height: 27px;">How mesmerising it could be, when you pour out all of your efforts on drums or blow out your melodies on flute or on guitar strings, and a mixture of inner soul and feelings comes out as soothing temptation which we call "music". so be here,"Play the music, not the instrument"
+              </h4>
+   </div>
+   <div class="rules">
+    <p style="text-align:center;">RULES FOR THE EVENT</p>
+    <p>1) There will be only one round.</p>
+  <p>2) The time limit will be 5 minutes.</p>
+  <p>3) Team size can be a maximum of 2 members.</p>
+  <p>4) One team member can use one instrument and other can use another instrument.</p>
+  <p>5) Participants need to come with their own instruments.</p>
+  <p>6) You will come with one of your prepared song or something to play and present them in front of judges.</p>
+  <p>7) You may use any musical instrument.</p>
+  <p>8) The decision of the judges and the coordinators shall be final and binding in all cases.</p>
+  </div>
+                      <a class="next-post" href="#project/joffrey-petit">
+              <p>Next Event</p>
+            </a>
+
+        </div>
+      </div>
+
+
+            <div class="project-detail" id="joffrey-petit">
+          <div class="intro">
+              <div class="cover" style="background-image:url(images/events/dance.jpg)"></div>
+              <div class="project-name">
+                <h3>Sur Sangam</h3>
+                <div class="excerpt">
+                    <p></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <h4 style="color:white;text-align: justify;line-height: 27px;">SUR SANGAM is a duet singing competition based on classical or non-classical themes where you can showcase the great sync in your singing.
+
+              </h4>
+   </div>
+   <div class="rules">
+    <p style="text-align:center;">RULES FOR THE EVENT</p>
+    <p>1) Maximum time allowed for each performance will be 6 minutes (from the entry on stage till exit from the stage).</p>
+
+  <p>2) Both partners can be male or female, the duo is not constrained to be a male-female duo.</p>
+
+  <p>3) Performance can be classical, non-classical or western.</p>
+
+  <p>4) A participant can only be part of 1 duet.</p>
+
+  <p>5) Registration can also be done on the spot.</p>
+  <p style="text-align:center;">PRELIMS</p>
+
+  <p>1) The contestants will have to perform a Hindi song of their choice.</p>
+
+  <p>2) The participants will be tested on a sense of scale and beat.</p>
+  <p>3) Accompanists (instrumentalists) are allowed. Participants will have to get their own musical instruments.</p>
+  <p>4) No karaoke or pre-recorded music (keyboard rhythm or guitar loops) will be allowed.</p>
+  <p>5) Time Limit will be 1.5 minutes to 3 minutes.</p>
+  <p style="text-align:center;">FINALS</p>
+  <p>1) Those selected in the prelims will have to sing the song either sung by the same artist(s)/singer(s) of which they have performed in the prelims or a song featuring the same lead actor/actress of the song.</p>
+  <p>2) The time limit will be 5 to 6 minutes.</p>
+  </div>
+                      <a class="next-post" href="#project/motostory">
+              <p>Next project</p>
+            </a>
+
+        </div>
+      </div>
+
+
+            <div class="project-detail" id="motostory">
+          <div class="intro">
+              <div class="cover" style="background-image:url(images/events/dance.jpg)"></div>
+              <div class="project-name">
+                <h3>BEAT IT (RAP Battle)</h3>
+                <div class="excerpt">
+                    <p></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+              <h4 style="color:white;text-align: justify;line-height: 27px;">Vivacity invites the music lovers from every genre to showcase their talent in the western music. Be it Pop, Country, Rap, Hip-Hop, etc. Just grab the mic and change the world in your rhymes and rhythms. Just Beat It!
+              </h4>
+   </div>
+   <div class="rules">
+    <p style="text-align:center;">RULES FOR THE EVENT</p>
+
+    <p>1) No accompanists are allowed in the elimination round.</p>
+
+  <p>2) For the finals, only one accompanist is allowed, either to play acoustic guitar or to give backing vocals.</p>
+
+  <p>3) The decision of the judges shall be final and binding.</p>
+
+  <p>4) Judging criteria will be the quality of singing, vocal range, clarity of lyrics and overall impact.</p>
+
+  <p>5) There will be 2 rounds one elimination round and a final round.</p>
+
+    <p style="text-align:center;">ELIMINATIONS</p>
+
+  <p>1) Participants can sing any song of their choice, in any genre or sub-genre of music except Rock and Metal. No accompanists are allowed.</p>
+
+  <p>2) The time limit will be 2 to 3 minutes.</p>
+  <p style="text-align:center;">FINALS</p>
+  <p>1) Participants have to sing a song of their choice where music may be in form of karaoke or a live acoustic guitar played by the participant himself.</p>
+  <p>2) The time limit will be 3 to 6 minutes.</p>
+
+  </div>
+                      <a class="next-post" href="#project/numerama">
+              <p>Next project</p>
+            </a>
+
+        </div>
+      </div>
+
+
+            <div class="project-detail" id="numerama">
+          <div class="intro">
+              <div class="cover" style="background-image:url(images/events/dance.jpg)"></div>
+              <div class="project-name">
+                <h3>Numerama</h3>
+                <div class="excerpt">
+                    <p>Part of the team who worked on Numerama's redesign</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="content">
+            <div class="project-info">
+                <h4 style="color:white;text-align: justify;line-height: 27px;">Let the mudras speak for you; Let the rhythm carry you away...
+                  Do you think you can captivate the audience with your grace? Here is your chance!
+                  Face the audience alone, and feel the music in your heart resonate to the beats, a dancer, thou art!
+                </h4>
+     </div>
+     <div class="rules">
+      <p style="text-align:center;">RULES FOR THE EVENT</p>
+      <p>1)Performance without any accompanists till elimination round.</p>
+    <p>2)Classical and semi-classical theme preferred.</p>
+    <p>3)The decision of the judges shall be final and binding.</p>
+    <p>4)Judging Criteria will be quality of singing (sur, taal and lay), vocal range, song selection and the overall impact of the song.</p>
+    <p>5)There will be 2 rounds one prelims round and a final round.</p>
+
+      <p style="text-align:center;">PRELIMS</p>
+      <p>1)Prelims rounds will be of "Hindi Solo Singing".</p>
+    <p>2)Participants can perform on any song of their choice.</p>
+    <p>3)Time limit will be 2 to 3 minutes.</p>
+
+    <p style="text-align:center;">FINALS</p>
+    <p>1)Selected singers would be choosing their songs on chit-picking basis.</p>
+    <p>2)Chits will have the name of a singer and a movie.</p>
+    <p>3)Participant can choose either a song sung by the given singer or a song from the given movie.</p>
+    <p>4)Deduction of Points/Marks if singers opt to pick next chit.</p>
+    <p>5) Time limit will be 3 to 5 minutes (including set-up and clearance time).</p>
+    </div>
+
+        </div>
+      </div>
+
+
+      </section>
+</div>
+
+<script src="js/events/events.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+      window.onload = function() {
+          document.querySelector(".loader2").style.display="none";
+      }
+  </script>
+</div>
+</body>
