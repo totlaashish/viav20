@@ -42,23 +42,6 @@ img.emoji {
   height: 100vh;
   position: fixed;
   z-index: 1112;
-animation: anim 6s linear;
-  animation-fill-mode: forwards;
-}
-@keyframes anim {
-  0%{width: 100%;opacity: 1;}
-  99%{width: 100%;opacity: 1;}
-  100%{width: 0;opacity: 0;}
-}
-@-webkit-keyframes anim {
-  0%{width: 100%;opacity: 1;}
-  99%{width: 100%;opacity: 1;}
-  100%{width: 0;opacity: 0;}
-}
-@-moz-keyframes anim {
-  0%{width: 100%;opacity: 1;}
-  99%{width: 100%;opacity: 1;}
-  100%{width: 0;opacity: 0;}
 }
 pattern path {
   stroke: #8D946A;
@@ -210,7 +193,7 @@ svg {
       </g>
       <rect x="-4.5" y="-4.5" width="57" height="73" fill="url(#pattern)"></rect>
     </svg>
-	  <p style="position: relative;text-align: center;top: 80vh;font-size:35px;animation: anim 6s linear;animation-fill-mode: forwards;">Loading...</p>
+	  <p style="position: relative;text-align: center;top: 80vh;font-size:35px;">Loading...</p>
   </div>
 
 <!-- load start -->
@@ -527,5 +510,11 @@ svg {
   </div>
 </div>
 <!-- popup end -->
+	  <script type="text/javascript">
+      window.onload = function() {
+          document.querySelector(".loader").style.display="none";
+      }
+  </script>
+	  
 </body>
 </html>
