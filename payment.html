@@ -4,10 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-
-    <!-- style for handburger -->
-  	<link rel="stylesheet" type="text/css" href="css/handburger/normalize.css" />
-  		<link rel="stylesheet" type="text/css" href="css/handburger/demo.css" />
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
 
     <title>payment mode</title>
     <style media="screen">
@@ -18,35 +15,55 @@
     body{
       text-align: center;
       color: white;
-      
+      background: linear-gradient(140deg,rgb(184, 96, 208),rgb(127, 89, 202),rgb(71, 170, 190));
+
     }
     h1{
-      margin: 30px 0;
+      margin: 70px 0 50px 0;
+      font-family: 'Joti One', cursive;
     }
     h2{
       margin: 30px 15% 0 15%;
+      font-family: 'Joti One', cursive;
     }
       .platform{
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         text-align: center;
         overflow: hidden;
+        min-height: 500px;
+        font-family: 'Joti One', cursive;
       }
       .left{
-        width: 70%;
+        width: 100%;
+        min-width: 300px;
+        margin: 50px 0;
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .left>div{
+        width: 50%;
+        min-width: 300px;
         align-self: center;
       }
       p{
         font-size: 18px;
         line-height: 50px;
+        width: 100%;
       }
       .right{
-        width: 30%;
+        width: 100%;
         align-self: center;
+        min-width: 300px;
       }
-      img{
+      .right>img{
         width: 80%;
+        min-width: 200px;
+        max-width: 300px;
       }
 
       /* button style */
@@ -119,6 +136,7 @@
       -moz-transition: all 1s ease;
       -o-transition: all 1s ease;
       transition: all 1s ease;
+      border: 1px white solid;
       }
 
       /* Victoria Buttons */
@@ -156,64 +174,26 @@
   <body>
     <a href="index.html"><img src="images/home/vivacity-logo.png" style="width:50px;font-size:20px;position:absolute;top:3%;left:3%;cursor:pointer;z-index:2;color:white;"></a>
     <h1>Fee Payment Mode</h1>
-    <h2>Thanks so much for registering for Vivacity 2018! Our team will contact you soon.</h2>
+    <h2>Thanks so much for registering for Vivacity 2018!<br> Our team will contact you soon.</h2>
     <div class="platform">
       <div class="left">
         <p>There are two options for FEE PAYMENT</p>
+        <div>
         <p>ONLINE </p>
         <div class="row1">
-          <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one">Pay Now</a> </div>
+          <div class="col-md-3 col-sm-3 col-xs-6"> <a href="https://paytm.com/education?op=The%20LNM%20Institute%20of%20Information%20Technology%20(LNMIIT)&type=registration&location=Vivacity" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one">Pay Now</a> </div>
         </div>
-        <p>You can pay online later (Before 1st Feb). </p>
+        <p>You can pay online before 1st Feb</p>
+      </div>
+      <div>
         <p>OFFLINE</p><p>Pay in cash at our Vivacity's Registration Desks.</p>
+      </div>
       </div>
       <div class="right">
         <img src="images/pay/paytm.png" alt="">
         <p>QR Code For Paytm</p>
       </div>
-      <main class="main main--demo-3">
-      			<div class="content content--demo-3">
-      				<div class="hamburger hamburger--demo-3 js-hover">
-      					<div class="hamburger__line hamburger__line--01">
-      						<div class="hamburger__line-in hamburger__line-in--01"></div>
-      					</div>
-      					<div class="hamburger__line hamburger__line--02">
-      						<div class="hamburger__line-in hamburger__line-in--02"></div>
-      					</div>
-      					<div class="hamburger__line hamburger__line--03">
-      						<div class="hamburger__line-in hamburger__line-in--03"></div>
-      					</div>
-      					<div class="hamburger__line hamburger__line--cross01">
-      						<div class="hamburger__line-in hamburger__line-in--cross01"></div>
-      					</div>
-      					<div class="hamburger__line hamburger__line--cross02">
-      						<div class="hamburger__line-in hamburger__line-in--cross02"></div>
-      					</div>
-      				</div>
-      				<div class="global-menu">
-      					<div class="global-menu__wrap">
-      						<a class="global-menu__item global-menu__item--demo-3" href="index.html">Home</a>
-      						<a class="global-menu__item global-menu__item--demo-3" href="events.html">Events</a>
-      						<a class="global-menu__item global-menu__item--demo-3" href="comming.html">Gallery</a>
-      						<a class="global-menu__item global-menu__item--demo-3" href="team.html#ALL">Team</a>
-      						<a class="global-menu__item global-menu__item--demo-3" href="comming.html">Sponsors</a>
-                  <a class="global-menu__item global-menu__item--demo-3" href="contact.html">Contact Us</a>
-      					</div>
-      				</div>
-      				<svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
-      					<path class="shape-overlays__path"></path>
-      					<path class="shape-overlays__path"></path>
-      					<path class="shape-overlays__path"></path>
-      				</svg>
-      			</div>
-      		</main>
     </div>
-
-
-    		<!-- handburger javascript -->
-    		<script src="js/handburger/demo.js"></script>
-    		<script src="js/handburger/easings.js"></script>
-    		<script src="js/handburger/demo3.js"></script>
 
   </body>
 </html>
