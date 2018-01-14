@@ -1,8 +1,47 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <title>Vivacity 2018 • 2-4 February</title>
+    <meta content="Vivacity 2018 •2-4 February " property=og:title>
+    <meta content="Vivacity 2018 2-4 February" name=twitterdescription>
+    <meta content="Vivacity 2018 • 2-4 February " name=twitter:title>
+    <meta content="Vivacity 2018 2-4 February" name=description>
+    <meta content="Vivacity 2018 2-4 February" property=og:description>
+    <meta charset=utf-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content=en_US property=og:locale>
+    <meta content=website property=og:type>
+    <meta content="Vivacity 2018" property=og:site_name>
+    <meta content=http://vivacity.lnmiit.ac.in/cover.png property=og:image>
+    <meta content=http://vivacity.lnmiit.ac.in/ property=og:url>
+    <meta content="Ashish" name=author>
+    <meta content=100000493061397 property=fb:admins>
+    <meta content=1389241191370840 property=fb:app_id>
+    <meta content=summary_large_image name=twitter:card>
+    <meta content=@VivacityLNMIIT name=twitter:site>
+    <meta content=Vivacity name=twitter:domain>
+    <meta content=@VivacityLNMIIT name=twitter:creator>
+    <meta content=http://vivacity.lnmiit.ac.in/cover.png name=twitter:image:src>
+    <link href=http://vivacity.lnmiit.ac.in/ rel=canonical>
+    <link href=https://plus.google.com/113534955956819396086/ rel=publisher>
+    <link href=http://vivacity.lnmiit.ac.in/fav/favicon.ico rel="shortcut icon" type=image/x-icon>
+    <link href=http://vivacity.lnmiit.ac.in/fav/apple-touch-icon-60x60.png rel=apple-touch-icon sizes=60x60>
+    <link href=http://vivacity.lnmiit.ac.in/fav/apple-touch-icon-120x120.png rel=apple-touch-icon sizes=120x120>
+    <link href=http://vivacity.lnmiit.ac.in/fav/apple-touch-icon-76x76.png rel=apple-touch-icon sizes=76x76>
+    <link href=http://vivacity.lnmiit.ac.in/fav/apple-touch-icon-152x152.png rel=apple-touch-icon sizes=152x152>
+    <meta content=http://vivacity.lnmiit.ac.in/fav/smalltile.png name=msapplication-square70x70logo>
+    <meta content=http://vivacity.lnmiit.ac.in/fav/mediumtile.png name=msapplication-square150x150logo>
+    <meta content=http://vivacity.lnmiit.ac.in/fav/widetile.png name=msapplication-wide310x150logo>
+    <meta content=http://vivacity.lnmiit.ac.in/fav/largetile.png name=msapplication-square310x310logo>
 
 	<link rel="stylesheet" href="css/home/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <link rel="stylesheet" href="css/style.css">
 
 	<title>Vivacity 2018</title>
 	<style>html,body{height: 100%;overflow: hidden;}
@@ -11,11 +50,7 @@
 		.container{
 			width: 100%;
 			height: 100vh;
-			background: url("images/home/home.jpg") no-repeat;
-			background-color: #bdbbbc;
-		 	background-size: contain;
-			background-position: center;
-			position: relative;
+			background-color:#a02a22
 		}
 		.logo{
 			width: 80px;
@@ -495,127 +530,260 @@
 				99%{top: 80vh;}
 				100%{top:120vh;}
 		}
-		
+
 		.cassette{
 			transform: scale(.6);
 		}
 		.outer-sticker{
 			    transform: scale(.7);
 		}
-		.car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8,.car9{
+		.container{
+      position: relative;
+      transition: .5s linear;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .text{
+      position: absolute;
+      z-index: 2;
+      font-size: 50px;
+      text-align: center;
+      top: 20%;
+      width: 100%;
+    }
+    .text>div
+    {
+      display: flex;
+      justify-content: center;
+    }
+    .text>div>div:nth-child(1)
+    {
+      position: relative;
+      top: 50px;
+      transform: rotate(30deg);
+    }
+    .coin{
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      position: absolute;
+      z-index: 4;
+    }
+    .incoin{
+      width: 40px;
+      height: 40px;
+      background-image: url("images/home/coin.gif");
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: flip 2s linear forwards;
+      -webkit-animation: flip 2s linear forwards;
+      -moz-animation: flip 2s linear forwards;
+    }
+    @keyframes flip {
+        15%{top:-20vh;}
+        35%{top: 0vh;}
+        100%{top: 100vh;}
+    }
+    @-webkit-keyframes flip {
+        15%{top:-20vh;}
+        35%{top: 0vh;}
+        100%{top: 100vh;}
+    }
+    @-moz-keyframes flip {
+        15%{top:-20vh;}
+        35%{top: 0vh;}
+        100%{top: 110vh;}
+    }
+    .Score{
+      position: absolute;
+      top: 3vh;
+      width: 100%;
+text-align: center;
+font-size: 30px;
+z-index: 1;
+    }
+
+    /* cartoon style */
+    .car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8,.car9{
 			position: absolute;
 			width: 80px;
 			opacity: 0;
 		}
 		.car1{
-			top: 5%;
-			left: 45%;
-			animation: anim1 10s ease-in-out infinite;
-			animation-direction: alternate;
-			-webkit-animation: anim1 10s ease-in-out infinite;
-			-webkit-animation-direction: alternate;
-			-moz-animation: anim1 10s ease-in-out infinite;
-			-moz-animation-direction: alternate;
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+			animation: anim1 9s ease-in-out infinite;
+			-webkit-animation: anim1 9s ease-in-out infinite;
+			-moz-animation: anim1 9s ease-in-out infinite;
 		}
 		.car2{
-			top: 25%;
-			left: 10%;
-			animation: anim1 10s ease-in-out infinite;
-			animation-delay: 4s;
-			-webkit-animation: anim1 10s ease-in-out infinite;
-			-webkit-animation-delay: 4s;
-			-moz-animation: anim1 10s ease-in-out infinite;
-			-moz-animation-delay: 4s;
-		}
-		.car3{
-			top: 80%;
-			left: 45%;
-			animation: anim1 10s ease-in-out infinite;
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+			animation: anim1 9s ease-in-out infinite;
 			animation-delay: 1s;
-			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation: anim1 9s ease-in-out infinite;
 			-webkit-animation-delay: 1s;
-			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation: anim1 9s ease-in-out infinite;
 			-moz-animation-delay: 1s;
 		}
-		.car4{
-			top: 15%;
-			left: 70%;
-			animation: anim1 10s ease-in-out infinite;
+		.car3{
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+			animation: anim1 9s ease-in-out infinite;
 			animation-delay: 2s;
-			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation: anim1 9s ease-in-out infinite;
 			-webkit-animation-delay: 2s;
-			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation: anim1 9s ease-in-out infinite;
 			-moz-animation-delay: 2s;
+		}
+		.car4{
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+			animation: anim1 9s ease-in-out infinite;
+			animation-delay: 3s;
+			-webkit-animation: anim1 9s ease-in-out infinite;
+			-webkit-animation-delay: 3s;
+			-moz-animation: anim1 9s ease-in-out infinite;
+			-moz-animation-delay: 3s;
 		}
 		.car5{
-			top: 60%;
-			left: 70%;
-			animation: anim1 10s ease-in-out infinite;
-			animation-delay: 6s;
-			-webkit-animation: anim1 10s ease-in-out infinite;
-			-webkit-animation-delay: 6s;
-			-moz-animation: anim1 10s ease-in-out infinite;
-			-moz-animation-delay: 6s;
-		}
-		.car6{
-			top: 30%;
-			left: 90%;
-			animation: anim1 10s ease-in-out infinite;
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+			animation: anim1 9s ease-in-out infinite;
 			animation-delay: 4s;
-			-webkit-animation: anim1 10s ease-in-out infinite;
+			-webkit-animation: anim1 9s ease-in-out infinite;
 			-webkit-animation-delay: 4s;
-			-moz-animation: anim1 10s ease-in-out infinite;
+			-moz-animation: anim1 9s ease-in-out infinite;
 			-moz-animation-delay: 4s;
 		}
+		.car6{
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+			animation: anim1 9s ease-in-out infinite;
+			animation-delay: 5s;
+			-webkit-animation: anim1 9s ease-in-out infinite;
+			-webkit-animation-delay: 5s;
+			-moz-animation: anim1 9s ease-in-out infinite;
+			-moz-animation-delay: 5s;
+		}
 		.car7{
-			top: 80%;
-			left: 10%;
-			animation: anim1 10s ease-in-out infinite;
-			-webkit-animation: anim1 10s ease-in-out infinite;
-			-moz-animation: anim1 10s ease-in-out infinite;
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+animation: anim1 9s ease-in-out infinite;
+animation-delay: 6s;
+-webkit-animation: anim1 9s ease-in-out infinite;
+-webkit-animation-delay: 6s;
+-moz-animation: anim1 9s ease-in-out infinite;
+-moz-animation-delay: 6s;
 		}
 		.car8{
-			top: 65%;
-			left: 10%;
-			animation: anim1 10s ease-in-out infinite;
-			animation-delay: 2s;
-			-webkit-animation: anim1 10s ease-in-out infinite;
-			-webkit-animation-delay: 2s;
-			-moz-animation: anim1 10s ease-in-out infinite;
-			-moz-animation-delay: 2s;
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+animation: anim1 9s ease-in-out infinite;
+animation-delay: 7s;
+-webkit-animation: anim1 9s ease-in-out infinite;
+-webkit-animation-delay: 7s;
+-moz-animation: anim1 9s ease-in-out infinite;
+-moz-animation-delay: 7s;
 		}
 		.car9{
-			top: 10%;
-			left: 20%;
-			animation: anim1 10s ease-in-out infinite;
-			animation-delay: 6s;
-			-webkit-animation: anim1 10s ease-in-out infinite;
-			-webkit-animation-delay: 6s;
-			-moz-animation: anim1 10s ease-in-out infinite;
-			-moz-animation-delay: 6s;
+      opacity: 0;
+z-index: 1;
+width: 175px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+animation: anim1 9s ease-in-out infinite;
+animation-delay: 8s;
+-webkit-animation: anim1 9s ease-in-out infinite;
+-webkit-animation-delay: 8s;
+-moz-animation: anim1 9s ease-in-out infinite;
+-moz-animation-delay: 8s;
 		}
-		@keyframes anim1 {
+    @keyframes anim1 {
 				0%{opacity: 0;}
-				5%{opacity: 1;}
-				20%{opacity: 1;}
-				25%{opacity: 0;}
+				1%{opacity: 1;}
+				10%{opacity: 1;}
+        11%{opacity: 0;}
 				100%{opacity: 0;}
 		}
 		@-webkit-keyframes anim1 {
-				0%{opacity: 0;}
-				5%{opacity: 1;}
-				20%{opacity: 1;}
-				25%{opacity: 0;}
-				100%{opacity: 0;}
+      0%{opacity: 0;}
+      1%{opacity: 1;}
+      10%{opacity: 1;}
+      11%{opacity: 0;}
+      100%{opacity: 0;}
 		}
 		@-moz-keyframes anim1 {
-				0%{opacity: 0;}
-				5%{opacity: 1;}
-				20%{opacity: 1;}
-				25%{opacity: 0;}
-				100%{opacity: 0;}
+      0%{opacity: 0;}
+      1%{opacity: 1;}
+      10%{opacity: 1;}
+      11%{opacity: 0;}
+      100%{opacity: 0;}
 		}
-
 		</style>
 
 	</style>
@@ -625,6 +793,8 @@
 		<link rel="stylesheet" type="text/css" href="css/handburger/demo.css" />
 </head>
 <body>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 	<div class="loader">
 				<p style="position: absolute;width:100%;color:white;font-family: 'Rancho', serif;text-align: center;top: 80vh;font-size:35px;animation: anim2 3s linear;animation-fill-mode: forwards;">Loading...</p>
@@ -653,7 +823,7 @@
 			<div class="side">A</div>
 			<div class="notes">
 				<hr>
-				<hr>
+				<center><span style="font-size: 35px" ><i>Vivacity 2018</i></span></center>
 				<hr>
 			</div><!-- /.notes -->
 		</div><!-- /.sticker-header -->
@@ -687,7 +857,7 @@
 
 		<div class="sticker-bottom">
 			<hr>
-			<p>VIVACITY</p>
+			<hr>
 			<hr>
 		</div><!-- /.sticker-bottom-->
 
@@ -711,27 +881,25 @@
 
 </div>
 
-	<div class="container">
-		<img class="logo" src="images/home/vivacity-logo.png" alt="">
-		<img class="car1" src="images/home/BugsBunny-min.png" alt="">
-		<img class="car2" src="images/home/Jhonny-min.png" alt="">
-		<img class="car3" src="images/home/Mickey-min.png" alt="">
-		<img class="car4" src="images/home/Mojojojo-min.png" alt="">
-		<img class="car5" src="images/home/Oswald-min.png" alt="">
-		<img class="car6" src="images/home/Pikachu-min.png" alt="">
-		<img class="car7" src="images/home/Scooby-min.png" alt="">
-		<img class="car8" src="images/home/Shinchan-min.png" alt="">
-		<img class="car9" src="images/home/Tom-min.png" alt="">
-	</div>
-
-	<div class="row2">
-		<a href="form.html"><img src="images/home/registration.png" style="width:100px;height:100px;" alt=""></a>
-  </div>
-
+<div class="container">
+<img class="car1" src="images/home/BugsBunny-min.png" alt="">
+	<img class="car2" src="images/home/Jhonny-min.png" alt="">
+	<img class="car3" src="images/home/Mickey-min.png" alt="">
+	<img class="car4" src="images/home/Mojojojo-min.png" alt="">
+	<img class="car5" src="images/home/Oswald-min.png" alt="">
+	<img class="car6" src="images/home/Pikachu-min.png" alt="">
+	<img class="car7" src="images/home/Scooby-min.png" alt="">
+	<img class="car8" src="images/home/Shinchan-min.png" alt="">
+	<img class="car9" src="images/home/Tom-min.png" alt="">
+<audio id="audio" src="sound/coin.wav" ></audio>
+<p class="Score">Score <span class="scoreValue">0</span><img src="images/home/coin.gif" style="width:35px;"></p>
+<div class="text">
+</div>
+<div id="circle"><i></i><i></i><i></i><i></i><i></i><i></i></div>
 <!-- handbuger html -->
 <main class="main main--demo-3">
 			<div class="content content--demo-3">
-				<div class="hamburger hamburger--demo-3 js-hover">
+				<div class="hamburger hamburger--demo-3 js-hover" style="top:5px;right:5px;">
 					<div class="hamburger__line hamburger__line--01">
 						<div class="hamburger__line-in hamburger__line-in--01"></div>
 					</div>
@@ -756,9 +924,10 @@
 						<a class="global-menu__item global-menu__item--demo-3" href="team.html#ALL">Team</a>
 						<a class="global-menu__item global-menu__item--demo-3" href="comming.html">Sponsors</a>
 						<a class="global-menu__item global-menu__item--demo-3" href="contact.html">Contact Us</a>
+						<a class="global-menu__item global-menu__item--demo-3" href="https://www.youtube.com/watch?v=7D3xi6DbD5s">Theme</a>
 					</div>
 				</div>
-				<svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<svg style="z-index: 2;"class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
 					<path class="shape-overlays__path"></path>
 					<path class="shape-overlays__path"></path>
 					<path class="shape-overlays__path"></path>
@@ -766,10 +935,62 @@
 			</div>
 		</main>
 
+</div>
+
+	<div class="row2">
+		<a href="form.html"><img src="images/home/registration.png" style="width:100px;height:100px;" alt=""></a>
+  </div>
+
+
 		<!-- handburger javascript -->
 		<script src="js/handburger/demo.js"></script>
 		<script src="js/handburger/easings.js"></script>
 		<script src="js/handburger/demo3.js"></script>
+
+		<script type="text/javascript">
+
+  var x = null;
+  var y = null;
+  var count=0;
+  var audio = document.getElementById("audio");
+
+  document.addEventListener("click",flipcoin);
+
+  function flipcoin() {
+    var div = document.createElement('div');
+    var indiv = document.createElement('div');
+    var scoreValue = document.querySelector('.scoreValue');
+    document.body.appendChild(div);
+    div.appendChild(indiv);
+    indiv.className="incoin";
+    div.className="coin";
+    div.style.left=(x-20)+"px";
+    div.style.top=(y-20)+"px";
+    count++;
+    scoreValue.innerHTML=count;
+    audio.play();
+  }
+
+  document.addEventListener('mousemove', onMouseUpdate, false);
+  document.addEventListener('mouseenter', onMouseUpdate, false);
+
+
+  function onMouseUpdate(e) {
+    x = e.pageX;
+    y = e.pageY;
+    console.log(x);
+    console.log(y);
+  }
+
+  function getMouseX() {
+    return x;
+  }
+
+  function getMouseY() {
+    return y;
+  }
+
+  </script>
 
 
 </body></html>
