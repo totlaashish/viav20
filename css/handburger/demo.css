@@ -20,12 +20,12 @@ html {
 	--path-fill-3: #fbd54a;
 	--color-title: #fff;
 	--font-family-title: 'Arapey', serif;
-	--font-size-title: 5vmax;
+	--font-size-title: 2vmax;
 	--font-weight-title: 400;
 	--color-menu: #000000;
 	--color-menu-hover: #fff;
 	--font-family-menu: 'Arapey', serif;
-	--font-size-menu: 4vmax;
+	--font-size-menu: 2vmax;
 	--font-weight-menu: 400;
 
 
@@ -112,7 +112,7 @@ a:focus {
 .global-menu__item {
 	color: #dad7d7;
 	font-family: 'Arapey', serif;
-	font-size:  4vmax;
+	font-size:  3vmax;
 	font-weight: 400;
 	opacity: 0;
 	transform: translateY(-100%);
@@ -249,7 +249,7 @@ a:focus {
 }
 
 .shape-overlays__path:nth-of-type(3) {
-	fill: #4E8678;
+	fill: #c1462b;
 }
 
 .shape-overlays__path:nth-of-type(4) {
