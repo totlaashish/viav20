@@ -171,7 +171,6 @@
     }
     h1{
       font-family: 'Marck Script', cursive;
-      height: 75px;
       padding-top: 25px;
       font-size: 40px;
       text-align: center;
@@ -179,13 +178,17 @@
       .container{
         width: 100%;
         padding-left: 30%;
-        background: linear-gradient(rgb(84, 5, 82),rgba(0,0,0,1));
+        background: linear-gradient(rgb(0, 0, 0), rgb(47, 99, 78));
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         text-align: left;
         color: white;
       }
+      .container>h1{
+        text-align: left;
+      }
+
       .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve,.thirteen,.fourteen,.fifteen,.sixteen,.seventeen,.eighteen,.ninteen{
         margin-top: 10vh;
         position: relative;
@@ -209,6 +212,17 @@
         font-size: 30px;
         color: white;
       }
+      @media screen and (max-width:800px) {
+          .container{
+            padding-left: 10%;
+          }
+          .container>h1{
+            text-align: center;
+          }
+          input{
+            width: 80%;
+          }
+      }
     /*  .sub{
         background-color: red;
         border: 0;
@@ -223,9 +237,9 @@
         width: 100%;
         height: 100%;
         transition: .4s linear;
-	      background: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0));
+	      background: linear-gradient(rgb(0, 0, 0), rgb(47, 53, 69));
       }
-      .second,.third,.fourth,.fifth,.sixth,.seventh,.eighty,.ninth{
+      .second,.third,.fourth,.fifth,.sixth,.seventh,.eighty,.ninth,.flicker{
         width:0;
         height: 100%;
         display: none;
@@ -367,7 +381,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
       <img src="images/events/vogue.JPG" alt="img12"/>
       <figcaption>
         <div>
-          <h2>VOGUE</h2>
+          <h2><b>VOGUE</b></h2>
         </div>
       </figcaption>
     </figure>
@@ -375,7 +389,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
       <img src="images/events/campusprincess.jpg" alt="img12"/>
       <figcaption>
         <div>
-          <h2>CAMPUS PRINCESS</h2>
+          <h2><b>CAMPUS PRINCESS</b></h2>
         </div>
         <a href="#">View more</a>
       </figcaption>
@@ -384,7 +398,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
       <img src="images/events/dance.jpg" alt="img1"/>
       <figcaption>
         <div>
-          <h2>Dance</h2>
+          <h2><b>Dance</b></h2>
         </div>
         <a href="#">View more</a>
       </figcaption>
@@ -393,7 +407,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
       <img src="images/events/drama.jpg" alt="img12"/>
       <figcaption>
         <div>
-          <h2>Drama</h>
+          <h2><b>Dramatics</b></h>
         </div>
         <a href="#">View more</a>
       </figcaption>
@@ -402,7 +416,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
       <img src="images/events/music.jpg" alt="img1"/>
       <figcaption>
         <div>
-          <h2>Music</h2>
+          <h2><b>Music</b></h2>
         </div>
         <a href="#">View more</a>
       </figcaption>
@@ -411,7 +425,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
       <img src="images/events/artncraft.jpg" alt="img12"/>
       <figcaption>
         <div>
-          <h2>Art n craft</h2>
+          <h2><b>Art n craft</b></h2>
         </div>
         <a href="#">View more</a>
       </figcaption>
@@ -420,7 +434,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
       <img src="images/events/nukkad.jpg" alt="img1"/>
       <figcaption>
         <div>
-          <h2>Nukkad Naatak</h2>
+          <h2><b>Nukkad Naatak</b></h2>
         </div>
         <a href="#">View more</a>
       </figcaption>
@@ -429,7 +443,16 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
       <img src="images/events/gaming.jpg" alt="img1"/>
       <figcaption>
         <div>
-          <h2>Gaming</h2>
+          <h2><b>Gaming</b></h2>
+        </div>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+    <figure class="effect-lily" onclick="fun10();">
+      <img src="images/events/flicker.jpg" alt="img1"/>
+      <figcaption>
+        <div>
+          <h2><b>FLICKER - Film Making</b></h2>
         </div>
         <a href="#">View more</a>
       </figcaption>
@@ -440,34 +463,35 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
 <div class="second">
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
 <div class="container">
-  <h3 style="font-size:33px;position:absolute;top:30px;left:30px;cursor:pointer;" onclick="fun20();">&#8592;</h3>
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun20();">&#8592;</h3>
   <h1 style="text-align:left;">
-  Vivacity 2018 Registrations
+  Vivacity 2018 Registrations - Vogue
+</br>
 </h1>
 <div class="one">
 </br>Name:
 </br>
-	<input type="text" required placeholder="tony stark" autofocus name="entry.1619957618"/>
+	<input type="text" required  autofocus name="entry.1619957618"/>
 </div>
 <div class="two">
 	email</br>
-	<input type="email" required placeholder="name@email.com" name="entry.1327166253"/>
+	<input type="email" required  name="entry.1327166253"/>
 </div>
 <div class="three">
 	Contact Number</br>
-	<input type="text" required pattern="[0-9]{10}" placeholder="56xxxxxxxx" name="entry.1060262953"/>
+	<input type="text" required  name="entry.1060262953"/>
 </div>
 <div class="four">
 	college Name</br>
-	<input type="text" required pattern="[A-Za-z]" placeholder="abc xyz" name="entry.1752921588"/>
+	<input type="text" required   name="entry.1752921588"/>
 </div>
 <div class="five">
 	Team Name</br>
-	<input type="text" required placeholder="avengers" name="entry.150632985"/>
+	<input type="text"  name="entry.150632985"/>
 </div>
 <div class="ten">
 	No. of Team Members</br>
-	<input type="text" required pattern="[1-9]" placeholder="5" name="entry.18825988"/>
+	<input type="text"    name="entry.18825988"/>
 </div>
 <div class="six">
 	Interested in participating in</br>
@@ -495,7 +519,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
 
 <div class="nine">
   <div class="row1">
-    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
   </div>
 </div>
 </div>
@@ -504,35 +528,34 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
 <div class="third">
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
 <div class="container">
-  <h3 style="font-size:33px;position:absolute;top:30px;left:30px;cursor:pointer;" onclick="fun30();">&#8592;</h3>
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun30();">&#8592;</h3>
   <h1 style="text-align:left;">
-  Vivacity 2018 Registrations
-	</br>
+  Vivacity 2018 Registrations - Dance
 	</br>
 </h1>
 <div class="one">
 </br>Name:
 </br>
-	<input type="text" required placeholder="tony stark" autofocus name="entry.1619957618"/>
+	<input type="text" required autofocus name="entry.1619957618"/>
 </div>
 <div class="two">
 	email</br>
-<input type="email" required placeholder="name@email.com" name="entry.1327166253"/></div>
+<input type="email" required  name="entry.1327166253"/></div>
 <div class="three">
 	Contact Number</br>
-	<input type="text" required pattern="[0-9]{10}" placeholder="56xxxxxxxx"  name="entry.1060262953"/>
+	<input type="text" required    name="entry.1060262953"/>
 </div>
 <div class="four">
 	College Name</br>
-	<input type="text" required placeholder="abc xyz" pattern="[A-Za-z]" name="entry.1752921588"/>
+	<input type="text" required   name="entry.1752921588"/>
 </div>
 <div class="five">
 	Team Name</br>
-	<input type="text" required placeholder="avengers" name="entry.150632985"/>
+	<input type="text"   name="entry.150632985"/>
 </div>
 <div class="ten">
 	No. of Team Members</br>
-	<input type="text" required pattern="[1-9]" placeholder="5"  name="entry.18825988"/>
+	<input type="text"     name="entry.18825988"/>
 </div>
 <div class="six">
 	Interested in participating in</br>
@@ -563,7 +586,7 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
 
   <div class="nine">
     <div class="row1">
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
     </div>
   </div>
 </div>
@@ -572,34 +595,33 @@ onload="if(submitted) {window.location='payment.html';}"></iframe>
 <div class="fourth">
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
 <div class="container">
-  <h3 style="font-size:33px;position:absolute;top:30px;left:30px;cursor:pointer;" onclick="fun40();">&#8592;</h3>
-  <h1 style="text-align:left;">
-  Vivacity 2018 Registrations
-	</br>
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun40();">&#8592;</h3>
+  <h1 style="">
+  Vivacity 2018 Registrations - Dramatics
 	</br>
 </h1>
 <div class="one">
 </br>Name:
 </br>
-	<input type="text" required placeholder="tony stark" autofocus name="entry.1619957618"/>
+	<input type="text" required  autofocus name="entry.1619957618"/>
 </div>
 <div class="two">
 	email</br>
-<input type="email" required placeholder="name@email.com" name="entry.1327166253"/></div>
+<input type="email" required  name="entry.1327166253"/></div>
 <div class="three">
 	Contact Number</br>
-	<input type="text" required pattern="[0-9]{10}" placeholder="56xxxxxxxx"  name="entry.1060262953"/>
+	<input type="text" required    name="entry.1060262953"/>
 </div>
 <div class="four">
-College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-Za-z]" name="entry.1752921588"/>
+College Name</br>	<input type="text" required   name="entry.1752921588"/>
 </div>
 <div class="five">
 	Team Name</br>
-	<input type="text" required placeholder="avengers" name="entry.150632985"/>
+	<input type="text"   name="entry.150632985"/>
 </div>
 <div class="ten">
 	No. of Team Members</br>
-	<input type="text" required pattern="[1-9]" placeholder="5"  name="entry.18825988"/>
+	<input type="text"    name="entry.18825988"/>
 </div>
 <div class="six">
 	Interested in participating in</br>
@@ -629,7 +651,7 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 
   <div class="nine">
     <div class="row1">
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
     </div>
   </div>
 </div>
@@ -638,34 +660,33 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 <div class="fifth">
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
 <div class="container">
-  <h3 style="font-size:33px;position:absolute;top:30px;left:30px;cursor:pointer;" onclick="fun50();">&#8592;</h3>
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun50();">&#8592;</h3>
   <h1 style="text-align:left;">
-  Vivacity 2018 Registrations
-	</br>
+  Vivacity 2018 Registrations - Music
 	</br>
 </h1>
 <div class="one">
 </br>Name:
 </br>
-	<input type="text" required placeholder="tony stark" autofocus name="entry.1619957618"/>
+	<input type="text" required  autofocus name="entry.1619957618"/>
 </div>
 <div class="two">
 	email</br>
-<input type="email" required placeholder="name@email.com" name="entry.1327166253"/></div>
+<input type="email" required  name="entry.1327166253"/></div>
 <div class="three">
 	Contact Number</br>
-	<input type="text" required pattern="[0-9]{10}" placeholder="56xxxxxxxx"  name="entry.1060262953"/>
+	<input type="text" required   name="entry.1060262953"/>
 </div>
 <div class="four">
-College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-Za-z]" name="entry.1752921588"/>
+College Name</br>	<input type="text" required   name="entry.1752921588"/>
 </div>
 <div class="five">
 	Team Name</br>
-	<input type="text" required placeholder="avengers" name="entry.150632985"/>
+	<input type="text"   name="entry.150632985"/>
 </div>
 <div class="ten">
 	No. of Team Members</br>
-	<input type="text" required pattern="[1-9]" placeholder="5"  name="entry.18825988"/>
+	<input type="text"    name="entry.18825988"/>
 </div>
 <div class="six">
 	Interested in participating in</br>
@@ -699,7 +720,7 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 
   <div class="nine">
     <div class="row1">
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
     </div>
   </div>
 </div>
@@ -708,34 +729,33 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 <div class="sixth">
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
 <div class="container">
-  <h3 style="font-size:33px;position:absolute;top:30px;left:30px;cursor:pointer;" onclick="fun60();">&#8592;</h3>
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun60();">&#8592;</h3>
   <h1 style="text-align:left;">
-  Vivacity 2018 Registrations
-	</br>
+  Vivacity 2018 Registrations - Art 'n' Craft
 	</br>
 </h1>
 <div class="one">
 </br>Name:
 </br>
-	<input type="text" required placeholder="tony stark" autofocus name="entry.1619957618"/>
+	<input type="text" required  autofocus name="entry.1619957618"/>
 </div>
 <div class="two">
 	email</br>
-<input type="email" required placeholder="name@email.com" name="entry.1327166253"/></div>
+<input type="email" required  name="entry.1327166253"/></div>
 <div class="three">
 	Contact Number</br>
-	<input type="text" required pattern="[0-9]{10}" placeholder="56xxxxxxxx"  name="entry.1060262953"/>
+	<input type="text" required    name="entry.1060262953"/>
 </div>
 <div class="four">
-College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-Za-z]" name="entry.1752921588"/>
+College Name</br>	<input type="text" required   name="entry.1752921588"/>
 </div>
 <div class="five">
 	Team Name</br>
-	<input type="text" required placeholder="avengers" name="entry.150632985"/>
+	<input type="text"   name="entry.150632985"/>
 </div>
 <div class="ten">
 	No. of Team Members</br>
-	<input type="text" required pattern="[1-9]" placeholder="5"  name="entry.18825988"/>
+	<input type="text"    name="entry.18825988"/>
 </div>
 <div class="six">
 	Interested in participating in</br>
@@ -767,7 +787,7 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 
   <div class="nine">
     <div class="row1">
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
     </div>
   </div>
 </div>
@@ -776,42 +796,38 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 <div class="seventh">
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
 <div class="container">
-  <h3 style="font-size:33px;position:absolute;top:30px;left:30px;cursor:pointer;" onclick="fun70();">&#8592;</h3>
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun70();">&#8592;</h3>
   <h1>
-  Vivacity 2018 Registrations
-	</br>
+  Vivacity 2018 Registrations - Nukkad Naatak
 	</br>
 </h1>
 <div class="one">
 </br>Name:
 </br>
-	<input type="text" required placeholder="tony stark" autofocus name="entry.1619957618"/>
+	<input type="text" required  autofocus name="entry.1619957618"/>
 </div>
 <div class="two">
 	email</br>
-<input type="email" required placeholder="name@email.com" name="entry.1327166253"/></div>
+<input type="email" required  name="entry.1327166253"/></div>
 <div class="three">
 	Contact Number</br>
-	<input type="text" required pattern="[0-9]{10}" placeholder="56xxxxxxxx"  name="entry.1060262953"/>
+	<input type="text" required   name="entry.1060262953"/>
 </div>
 <div class="four">
-College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-Za-z]" name="entry.1752921588"/>
+College Name</br>	<input type="text" required   name="entry.1752921588"/>
 </div>
 <div class="five">
 	Team Name</br>
-	<input type="text" required placeholder="avengers" name="entry.150632985"/>
+	<input type="text"   name="entry.150632985"/>
 </div>
 <div class="ten">
 	No. of Team Members</br>
-	<input type="text" required pattern="[1-9]" placeholder="5"  name="entry.18825988"/>
+	<input type="text"   name="entry.18825988"/>
 </div>
 <div class="six">
 	Interested in participating in</br>
 	<select name="entry.226987026" >
-    	<option value="Event one">Event one</option>
-    	<option value="event two">Event two</option>
-    	<option value="event three">Event three</option>
-    	<option value="Event four">Event four</option>
+    	<option value="Event one">Nukkad Naatak</option>
     </select>
   </div>
   <div class="seven">
@@ -834,7 +850,7 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 
   <div class="nine">
     <div class="row1">
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
     </div>
   </div>
 </div>
@@ -844,34 +860,33 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 <div class="eighty">
 	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdJqtzZJKLa687kS0KQkmeXpNzqn8Gjex7LJ_xlaVIXxp9XUA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
 <div class="container">
-  <h3 style="font-size:33px;position:absolute;top:30px;left:30px;cursor:pointer;" onclick="fun80();">&#8592;</h3>
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun80();">&#8592;</h3>
   <h1  style="text-align:left;">
-  Vivacity 2018 Registrations
-	</br>
+  Vivacity 2018 Registrations - Gaming
 	</br>
 </h1>
 <div class="one">
 </br>Name:
 </br>
-	<input type="text" required placeholder="tony stark" autofocus name="entry.1619957618"/>
+	<input type="text" required  autofocus name="entry.1619957618"/>
 </div>
 <div class="two">
 	email</br>
-<input type="email" required placeholder="name@email.com" name="entry.1327166253"/></div>
+<input type="email" required  name="entry.1327166253"/></div>
 <div class="three">
 	Contact Number</br>
-	<input type="text" required pattern="[0-9]{10}" placeholder="56xxxxxxxx"  name="entry.1060262953"/>
+	<input type="text" required   name="entry.1060262953"/>
 </div>
 <div class="four">
-College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-Za-z]" name="entry.1752921588"/>
+College Name</br>	<input type="text" required  name="entry.1752921588"/>
 </div>
 <div class="five">
 	Team Name</br>
-	<input type="text" required placeholder="avengers" name="entry.150632985"/>
+	<input type="text" name="entry.150632985"/>
 </div>
 <div class="ten">
 	No. of Team Members</br>
-	<input type="text" required pattern="[1-9]" placeholder="5"  name="entry.18825988"/>
+	<input type="text"  name="entry.18825988"/>
 </div>
 <div class="six">
 	Interested in participating in</br>
@@ -900,7 +915,7 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 
   <div class="nine">
     <div class="row1">
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
     </div>
   </div>
 </div>
@@ -910,76 +925,79 @@ College Name</br>	<input type="text" required placeholder="abc xyz" pattern="[A-
 <div class="ninth">
   <form action="https://docs.google.com/forms/d/e/1FAIpQLSeJA7gD2IO_rkXaaJNm6SH7SuypV2n0Lbgwhj_Y810Mu-J1fA/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
 <div class="container">
-  <h3 style="font-size:33px;position:absolute;top:30px;left:30px;cursor:pointer;" onclick="fun90();">&#8592;</h3>
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun90();">&#8592;</h3>
   <h1  style="text-align:left;">
-  Vivacity 2018 Registrations
-	</br>
+  Vivacity 2018 Registrations - Campus Princess
 	</br>
 </h1>
+<p>Note:  This event has <b>FREE Participation</b>. <b>No Fee PAyment is Required for participation in this event.</b>
+</p>
+</br>
+
 	<h2>Personal Information</h2>
 <div class="one">
 First Name </br>
-  <input type="text" required placeholder="harry" pattern="[A-Za-z]" name="entry.142060873" />
+  <input type="text" required  name="entry.142060873" />
 </div>
 <div class="two">
   Middle Name </br>
-  <input type="text" placeholder="james" pattern="[A-Za-z]" name="entry.156512724"/>
+  <input type="text"   name="entry.156512724"/>
 </div>
 <div class="three">
   Last Name </br>
-  <input type="text" placeholder="potter" pattern="[A-Za-z]" name="entry.1111761735"/>
+  <input type="text" required   name="entry.1111761735"/>
 </div>
 <div class="four">
 Date of Birth</br>
-<input type="text" placeholder="1/1/1995" pattern="[1-31]{1}+/[1-12]{1}+/[1994-2000]{1}" name="entry.548399521" />
+<input type="text" required   name="entry.548399521" />
 </div>
 <div class="five">
 Age</br>
-<input type="text" pattern="[18-24]{1}" name="entry.820361335" />
+<input type="text" required  name="entry.820361335" />
 </div>
 <div class="six">
 College</br>
-<input type="text" placeholder="xyz abc" pattern="[A-Za-z]" name="entry.1717056006" />
+<input type="text" required  name="entry.1717056006" />
 </div>
 <h2>Address</h2>
 <div class="seven">
 Current City</br>
-<input type="text" placeholder="jaipur" pattern="[A-Za-z]" name="entry.276545168" />
+<input type="text" required   name="entry.276545168" />
 </div>
 <div class="eight">
 Birth City</br>
-<input type="text" placeholder="jaipur" pattern="[A-Za-z]" name="entry.1859424982" />
+<input type="text" required  name="entry.1859424982" />
 </div>
 <h2>Physical Attributes</h2>
 <div class="nine">
 Height</br>
-<input type="text" placeholder="5,4(if height is 5 Feet 4 Inches)" pattern="[5-6]{1}+,[0-9]{1}" name="entry.2002825275" />
+<input type="text" required placeholder="5,4(if height is 5 Feet 4 Inches)"  name="entry.2002825275" />
 </div>
 <div class="ten">
 Weight</br>
-<input type="text" placeholder="in Kg" pattern="[0-9]" name="entry.723660066" />
+<input type="text" required placeholder="in Kg"  name="entry.723660066" />
 </div>
 <h2>Vital Statistics</h2>
 <div class="eleven">
 Bust</br>
-<input type="text" placeholder="in Inches" pattern="" name="entry.1438944225" />
+<input type="text" required placeholder="in Inches"  name="entry.1438944225" />
 </div>
 <div class="twelve">
 waist</br>
-<input type="text" placeholder="in Inches" pattern=""  name="entry.1926435624" />
+<input type="text" required placeholder="in Inches"   name="entry.1926435624" />
 </div>
 <div class="thirteen">
 hips</br>
-<input type="text"  placeholder="in Inches" pattern="" name="entry.1121054638" />
+<input type="text" required placeholder="in Inches" name="entry.1121054638" />
 </div>
 <h2>Contact Details</h2>
 <div class="fourteen">
 phone</br>
-<input type="text"  placeholder="78xxxxxxxx" pattern="[0-9]{10}" name="entry.1730389624" />
+<input type="text" required   name="entry.1730389624" />
 </div>
 <div class="fifteen">
 email</br>
-<input type="text" required placeholder="name@email.com" name="entry.1459976268" />
+<input type="text" required  name="entry.1459976268" />
 </div>
 <h2>Upload Photos</h2>
 <p>Format: gif, jpg and jpeg | Dimension: 450px*600px | Max Size: 2 mb<br>
@@ -988,32 +1006,116 @@ Please upload the Images on your Google Drive and submit the link to those image
 
 <div class="sixteen">
 close up</br>
-<input type="text"  name="entry.1853813479" />
+<input type="text" required name="entry.1853813479" />
 </div>
 <div class="seventeen">
 midshot</br>
-<input type="text"  name="entry.682907812" />
+<input type="text" required name="entry.682907812" />
 </div>
 <div class="eighteen">
 full length</br>
-<input type="text"  name="entry.428936682" />
+<input type="text" required name="entry.428936682" />
 </div>
 <h2>Terms & Conditions</h2>
 <p>1)  The applicant must agree to abide by all rules, as changed from time to time by the Organizers.</p>
 <p>2)  The applicant should be between 18 - 25 years of age as of December 31, 2018. The applicant will be required to produce their age proof (Passport, birth certificate, school leaving certificate, driver's license, etc).</p>
 <p>3)  The applicant uses the prefix 'Miss'(or equivalent) before her name</p>
+<p>4) This event has <b>FREE Participation</b>. <b>No Fee PAyment is Required for participation in this event.</b></p>
 <input type="hidden" name="fvv" value="1">
 <input type="hidden" name="draftResponse" value="[null,null,&quot;-6927917935918780120&quot;]">
 <input type="hidden" name="pageHistory" value="0">
 <input type="hidden" name="fbzx" value="-6927917935918780120">
 <div class="nine">
   <div class="row1">
-    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="" style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px;" target="_blank" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
   </div>
 </div>
 </form>
 </div>
 </div>
+
+
+<div class="flicker">
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSewT7F4chxBpAsdcOwR0uVc60MEfJoLKyKD_hXzg0njZeFFuw/formResponse" target="hidden_iframe" method="POST" id="mG61Hd" onsubmit="submitted=true;">
+<div class="container">
+  <h3 style="font-size:33px;position:absolute;top:20px;left:20px;cursor:pointer;" onclick="fun100();">&#8592;</h3>
+  <h1  style="text-align:left;">
+  Vivacity 2018 Registrations - Flicker </br>
+	</br>
+</h1>
+</p>
+</br>
+
+<div class="one">
+Team Leader's Name </br>
+<input type="text" required  name="entry.1947978094" />
+</div>
+<div class="two">
+Contact no. </br>
+<input type="text"  required name="entry.1073131669"/>
+</div>
+<div class="three">
+Alternate contact no. </br>
+<input type="text" required   name="entry.1070994589"/>
+</div>
+<div class="four">
+Email</br>
+<input type="text" required   name="entry.1479160026" />
+</div>
+<div class="five">
+Production's name</br>
+<input type="text" required  name="entry.1033704606" />
+</div>
+<div class="six">
+College</br>
+<input type="text" required  name="entry.335956885" />
+</div>
+<div class="seven">
+City</br>
+<input type="text" required   name="entry.1647002915" />
+</div>
+<div class="eight">
+State</br>
+<input type="text" required  name="entry.800970514" />
+</div>
+<div class="nine">
+Total members (max 8)</br>
+<input type="text" required   name="entry.575406125" />
+</div>
+<h2>Upload Movie Link</h2>
+<p>Time Duration : 1-10 minutes<br>
+Please upload the Movie on your Google Drive and submit the link to the movie below.<br>
+(Please keep these link sharing to "Public" privacy setting!)</p>
+<div class="ten">
+Movie  (Google drive link)</br>
+<input type="text" required   name="entry.631179632" />
+</div>
+<div class="eleven">
+Movie Name</br>
+<input type="text" required   name="entry.341864707" />
+</div>
+<div class="twelve">
+Description</br>
+<textarea required   name="entry.572693061"></textarea>
+</div>
+<div class="thirteen">
+Remarks or queries</br>
+<textarea  name="entry.1312795882"></textarea>
+</div>
+
+<input type="hidden" name="fvv" value="1">
+<input type="hidden" name="draftResponse" value="[null,null,&quot;5740218402816176541&quot;]">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fbzx" value="5740218402816176541">
+<div class="nine">
+  <div class="row1">
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a style="font-family: &#39;Indie Flower&#39;, cursive;font-size:15px;width: 230px" class="btn btn-sm animated-button victoria-one"><input class="sub" type="submit" value = "submit" target="_blank"></a> </div>
+  </div>
+</div>
+</form>
+</div>
+</div>
+
 
   <script type="text/javascript">
   var w = window,
@@ -1059,6 +1161,7 @@ function myFunction() {
         seventh = document.querySelector(".seventh");
         eighty = document.querySelector(".eighty");
         ninth = document.querySelector(".ninth");
+        flicker = document.querySelector(".flicker");
 
         function fun2() {
           second.style.display="block";
@@ -1153,6 +1256,18 @@ function myFunction() {
         function fun90() {
           ninth.style.display="none";
           ninth.style.width=0;
+          first.style.width=100+"%";
+          first.style.display="block";
+        }
+        function fun10() {
+          flicker.style.display="block";
+          flicker.style.width=100+"%";
+          first.style.width=0;
+          first.style.display="none";
+        }
+        function fun100() {
+          flicker.style.display="none";
+          flicker.style.width=0;
           first.style.width=100+"%";
           first.style.display="block";
         }
