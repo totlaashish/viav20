@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=.7,maximum-scale=.7, user-scalable=no">
 	<meta charset=utf-8>
     <meta content="IE=edge" http-equiv=X-UA-Compatible>
+		<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title>Vivacity 2018 • 2-4 February</title>
     <meta content="Vivacity 2018 •2-4 February " property=og:title>
     <meta content="Vivacity 2018 2-4 February" name=twitterdescription>
@@ -810,6 +810,114 @@ animation-delay: 8s;
 				background-color: rgb(59, 89, 152) ;
 			}
 
+			@media screen and (max-width:600px) {
+					#circle>div{
+						transform: scale(.5);
+					}
+					.car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8,.car9{
+						transform: scale(.5);
+					}
+			}
+			.textVivacity{
+				width: 100%;
+				position: absolute;
+			}
+			.textAffair{
+				width: 100%;
+				position: absolute;
+			}
+			.vivacity{
+				z-index: 1;
+    width: 45%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin: 0 auto;
+			}
+			.affair{
+				z-index: 1;
+    width: 35%;
+    position: absolute;
+    top: 55vh;
+    bottom: 5vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin: 0 auto;
+    margin: 0 auto;
+			}
+			@media screen and (max-width:1200px) {
+					.vivacity{
+						width: 40%;
+					}
+					.affair{
+						width: 35%;
+					}
+			}
+			@media screen and (max-width:1100px) {
+					.vivacity{
+						width: 40%;
+						top: 5vh;
+					}
+					.affair{
+						width: 35%;
+						top: 60vh;
+					}
+			}
+			@media screen and (max-width:900px) {
+					.vivacity{
+						width: 45%;
+						top: 5vh;
+					}
+					.affair{
+						width: 40%;
+						top: 60vh;
+					}
+			}
+			@media screen and (max-width:1100px) {
+					.vivacity{
+						width: 50%;
+						top: 5vh;
+					}
+					.affair{
+						width: 48%;
+						top: 60vh;
+					}
+			}
+			@media screen and (max-width:700px) {
+					.vivacity{
+						width: 60%;
+						top: 5vh;
+					}
+					.affair{
+						width: 50%;
+						top: 65vh;
+					}
+			}
+			@media screen and (max-width:600px) {
+					.vivacity{
+						width: 80%;
+						top: 6vh;
+					}
+					.affair{
+						width: 60%;
+						top: 55vh;
+					}
+			}
+			@media screen and (max-width:400px) {
+					.vivacity{
+						width: 100%;
+						top: 15vh;
+					}
+					.affair{
+						width: 35%;
+						top: 60vh;
+					}
+			}
+
 	</style>
 
 	<!-- style for handburger -->
@@ -916,6 +1024,12 @@ animation-delay: 8s;
 	<img class="car7" src="images/home/Scooby-min.png" alt="">
 	<img class="car8" src="images/home/Shinchan-min.png" alt="">
 	<img class="car9" src="images/home/Tom-min.png" alt="">
+	<div class="textVivacity">
+	<img src="images/home/vivacity18.png" alt="" class="vivacity">
+</div>
+<div class="textAffair">
+	<img src="images/home/a90saffair.png" alt="" class="affair">
+</div>
 <audio id="audio" src="sound/coin.wav" ></audio>
 <p class="Score">Score <span class="scoreValue">0</span><img src="images/home/coin.gif" style="height:20px;"></p>
 <div class="text">
