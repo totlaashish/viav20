@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=.7,maximum-scale=.7, user-scalable=no">
 	<meta charset=utf-8>
     <meta content="IE=edge" http-equiv=X-UA-Compatible>
     <title>Vivacity 2018 • 2-4 February</title>
@@ -56,6 +56,8 @@
 			width: 80px;
 			height: 80px;
 			margin: 2% 0 0 2%;
+			position: absolute;
+			z-index: 1;
 		}
 
 		<style media="screen">
@@ -600,10 +602,10 @@
     }
     .Score{
       position: absolute;
-      top: 3vh;
+      top: 0;
       width: 100%;
 text-align: center;
-font-size: 30px;
+font-size: 20px;
 z-index: 1;
     }
 
@@ -784,7 +786,29 @@ animation-delay: 8s;
       11%{opacity: 0;}
       100%{opacity: 0;}
 		}
-		</style>
+		/* style for share buttons */
+			.share{
+				position: absolute;
+				z-index: 5;
+				left: 0;
+				bottom: 0;
+			}
+			.share>ul{
+				list-style-type: none;
+				display: flex;
+			}
+			.share>ul>li>a>img{
+				width: 40px;
+			}
+			.share>ul>li:nth-child(1)>a>img:hover{
+				background-color: rgba(0, 132, 180,1);
+			}
+			.share>ul>li:nth-child(2)>a>img:hover{
+				background-color: rgb(233, 89, 80)
+			}
+			.share>ul>li:nth-child(3)>a>img:hover{
+				background-color: rgb(59, 89, 152) ;
+			}
 
 	</style>
 
@@ -882,6 +906,7 @@ animation-delay: 8s;
 </div>
 
 <div class="container">
+	<img src="images/home/vivacity-logo.png" class="logo" alt="">
 <img class="car1" src="images/home/BugsBunny-min.png" alt="">
 	<img class="car2" src="images/home/Jhonny-min.png" alt="">
 	<img class="car3" src="images/home/Mickey-min.png" alt="">
@@ -892,10 +917,10 @@ animation-delay: 8s;
 	<img class="car8" src="images/home/Shinchan-min.png" alt="">
 	<img class="car9" src="images/home/Tom-min.png" alt="">
 <audio id="audio" src="sound/coin.wav" ></audio>
-<p class="Score">Score <span class="scoreValue">0</span><img src="images/home/coin.gif" style="width:35px;"></p>
+<p class="Score">Score <span class="scoreValue">0</span><img src="images/home/coin.gif" style="height:20px;"></p>
 <div class="text">
 </div>
-<div id="circle"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div id="circle"><div></div><div></div><div></div><div></div><div></div><div></div></div>
 <!-- handbuger html -->
 <main class="main main--demo-3">
 			<div class="content content--demo-3">
@@ -934,6 +959,14 @@ animation-delay: 8s;
 				</svg>
 			</div>
 		</main>
+
+		<div class="share">
+      <ul>
+        <li><a href="https://twitter.com/vivacitylnmiit"><img src="images/home/twitter.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com/vivacity_lnmiit"><img src="images/home/instagram.png" alt=""></a></li>
+        <li><a href="https://www.facebook.com/Vivacity.LNMIIT/"><img src="images/home/image(5).png" alt=""></a></li>
+      </ul>
+    </div>
 
 </div>
 
