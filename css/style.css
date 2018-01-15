@@ -26,14 +26,14 @@ body {
           box-shadow: inset 5px 5px 100px #000;
 }
 
-i {
+#circle>div {
   position: absolute;
   top: 50%;
   left: 50%;
   border-radius: 50%;
   background: rgba(255, 0, 0, 0.2);
 }
-i:nth-child(1) {
+#circle>div:nth-child(1) {
   width: 1300px;
   height: 1300px;
   margin: -650px 0 0 -650px;
@@ -45,7 +45,7 @@ i:nth-child(1) {
   -webkit-animation: circin 0.5s linear 5ms forwards;
           animation: circin 0.5s linear 5ms forwards;
 }
-i:nth-child(2) {
+#circle>div:nth-child(2) {
   width: 1100px;
   height: 1100px;
   margin: -550px 0 0 -550px;
@@ -57,7 +57,7 @@ i:nth-child(2) {
   -webkit-animation: circin 0.5s linear 50ms forwards;
           animation: circin 0.5s linear 50ms forwards;
 }
-i:nth-child(3) {
+#circle>div:nth-child(3) {
   width: 900px;
   height: 900px;
   margin: -450px 0 0 -450px;
@@ -69,7 +69,7 @@ i:nth-child(3) {
   -webkit-animation: circin 0.5s linear 100ms forwards;
           animation: circin 0.5s linear 100ms forwards;
 }
-i:nth-child(4) {
+#circle>div:nth-child(4) {
   width: 700px;
   height: 700px;
   margin: -350px 0 0 -350px;
@@ -81,7 +81,7 @@ i:nth-child(4) {
   -webkit-animation: circin 0.5s linear 150ms forwards;
           animation: circin 0.5s linear 150ms forwards;
 }
-i:nth-child(5) {
+#circle>div:nth-child(5) {
   width: 500px;
   height: 500px;
   margin: -250px 0 0 -250px;
@@ -93,7 +93,7 @@ i:nth-child(5) {
   -webkit-animation: circin 0.5s linear 200ms forwards;
           animation: circin 0.5s linear 200ms forwards;
 }
-i:nth-child(6) {
+#circle>div:nth-child(6) {
   width: 300px;
   height: 300px;
   margin: -150px 0 0 -150px;
@@ -105,9 +105,10 @@ i:nth-child(6) {
   -webkit-animation: circin 0.5s linear 250ms forwards;
           animation: circin 0.5s linear 250ms forwards;
 }
-i:nth-child(6) {
+#circle>div:nth-child(6) {
   background: #0e2d52;
 }
+
 
 @-webkit-keyframes fadein {
   from {
